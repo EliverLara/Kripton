@@ -1,0 +1,54 @@
+$base_color:#131519;
+$bg_color:#171a1f; //252b2f
+$main_dark: darken($bg_color, 5%);
+$gray: lighten($bg_color, 7%);
+$fg_color: #727272;
+$dracula: $bg_color;
+$topbar_color:  lighten($fg_color, 20%);
+
+$lime: #C3E88D;
+$red: #FF785A;
+$orange: #FFAA5A;
+$yellow: #FFF05A;
+$purple: #BE97C6;
+$cyan: #A0B9BF;
+$teal: #00A9A5;
+
+$g1: darken(#9bbfbf, 7%);
+$g2: darken(#9bbfbf, 7%);
+
+$selected_fg_color: #fefefe;
+$selected_bg_color: #9bbfbf;
+$selected_borders_color: darken($selected_bg_color, 10%);
+$borders_color: darken($bg_color, 3%);
+$borders_edge: transparentize(white, 0.9);
+$link_color: #A0C1B9;
+$link_visited_color: transparentize($link_color,0.5);
+$top_hilight: $borders_edge;
+$top_highlight: transparentize(white, 0.9);
+$bottom_highlight: transparentize(black, 0.9);
+
+$warning_color: darken($orange,10%);
+$error_color: darken( $red,5%);
+$success_color: darken($cyan,10%);
+$destructive_color: darken( #c72240,10%);
+
+$osd_fg_color: $fg_color;
+$osd_bg_color: transparentize($bg_color, 0.05);
+$osd_borders_color: transparentize(black, 0.3);
+$osd_outer_borders_color: transparentize(white, 0.9);
+
+$tooltip_borders_color: $osd_outer_borders_color;
+
+//insensitive state derived colors
+$insensitive_fg_color: mix($fg_color, $bg_color, 50%);
+$insensitive_bg_color: mix($bg_color, $base_color, 60%);
+$insensitive_borders_color: $borders_color;
+
+//colors for the backdrop state, derived from the main colors.
+$backdrop_base_color: lighten($base_color,1%);
+$backdrop_bg_color: $bg_color;
+$backdrop_fg_color: transparentize($fg_color, 0.2);
+$backdrop_insensitive_color: lighten($backdrop_bg_color, 15%);
+$backdrop_borders_color: mix($borders_color, $bg_color, 90%);
+$backdrop_dark_fill: mix($backdrop_borders_color,$backdrop_bg_color, 35%);
