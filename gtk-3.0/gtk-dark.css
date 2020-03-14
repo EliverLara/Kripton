@@ -405,9 +405,9 @@ button {
       padding-right: 8px; }
   combobox:drop(active) button.combo, notebook > header > tabs > arrow:drop(active),
   button:drop(active) {
-    color: #4e9a06;
-    border-color: #4e9a06;
-    box-shadow: inset 0 0 0 1px #4e9a06; }
+    color: #8a997d;
+    border-color: #8a997d;
+    box-shadow: inset 0 0 0 1px #8a997d; }
 
 row:selected
 button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
@@ -1628,11 +1628,11 @@ colorswatch.light overlay {
 colorswatch:drop(active) {
   box-shadow: none; }
   colorswatch:drop(active).light overlay {
-    border-color: #4e9a06;
-    box-shadow: inset 0 0 0 2px #08090b, inset 0 0 0 1px #4e9a06; }
+    border-color: #8a997d;
+    box-shadow: inset 0 0 0 2px #08090b, inset 0 0 0 1px #8a997d; }
   colorswatch:drop(active).dark overlay {
-    border-color: #4e9a06;
-    box-shadow: inset 0 0 0 2px #08090b, inset 0 0 0 1px #4e9a06; }
+    border-color: #8a997d;
+    box-shadow: inset 0 0 0 2px #08090b, inset 0 0 0 1px #8a997d; }
 
 colorswatch overlay {
   box-shadow: inset 0 3px 2px -2px rgba(0, 0, 0, 0.5);
@@ -1862,8 +1862,8 @@ entry {
   spinbutton:drop(active):focus:not(.vertical), spinbutton:drop(active):not(.vertical),
   entry:drop(active):focus,
   entry:drop(active) {
-    border-color: #4e9a06;
-    box-shadow: inset 0 0 0 1px #4e9a06; }
+    border-color: #8a997d;
+    box-shadow: inset 0 0 0 1px #8a997d; }
   .osd spinbutton:not(.vertical), .osd
   entry {
     color: white;
@@ -1937,7 +1937,7 @@ entry:drop(active) + button,
 entry:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) >
 entry:drop(active) +
 entry {
-  border-left-color: #4e9a06; }
+  border-left-color: #8a997d; }
 
 .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled),
 .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), .linked.vertical >
@@ -1968,7 +1968,7 @@ entry + entry:focus:not(:only-child) {
 .linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical >
 entry + entry:drop(active):not(:only-child) {
-  border-top-color: #4e9a06; }
+  border-top-color: #8a997d; }
 
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + entry,
@@ -1992,7 +1992,7 @@ entry:drop(active):not(:only-child) + entry,
 entry:drop(active):not(:only-child) + button,
 .linked.vertical >
 entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #4e9a06; }
+  border-top-color: #8a997d; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
   background-color: #131519;
@@ -4139,11 +4139,11 @@ placessidebar row.sidebar-new-bookmark-row {
   color: #9bbfbf; }
 
 placessidebar row:drop(active):not(:disabled) {
-  box-shadow: inset 0 1px #4e9a06, inset 0 -1px #4e9a06; }
+  box-shadow: inset 0 1px #8a997d, inset 0 -1px #8a997d; }
   placessidebar row:drop(active):not(:disabled), placessidebar row:drop(active):not(:disabled) label, placessidebar row:drop(active):not(:disabled) image {
-    color: #4e9a06; }
+    color: #8a997d; }
   placessidebar row:drop(active):not(:disabled):selected {
-    background-color: #4e9a06; }
+    background-color: #8a997d; }
     placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
       color: #000; }
 
@@ -5785,7 +5785,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .panel.translucent {
     background-color: rgba(0, 0, 0, 0.5); }
   .panel.color-light.translucent {
-    background-color: rgba(235, 235, 235, 0.7); }
+    background-color: rgba(23, 26, 31, 0.7); }
 
 menubar.panel,
 .panel menubar {
@@ -5893,37 +5893,37 @@ LibraryWindow .the-button-in-the-combobox {
   background-color: #9bbfbf; }
 
 .xfce4-panel.panel {
-  background-color: rgba(235, 235, 235, 0.7);
+  background-color: rgba(23, 26, 31, 0.7);
   color: #727272;
   text-shadow: none;
   -gtk-icon-shadow: none; }
 
 #tasklist-button {
-  color: rgba(114, 114, 114, 0.8);
+  color: rgba(165, 165, 165, 0.8);
   border-radius: 0;
   border: none;
-  background-color: rgba(235, 235, 235, 0); }
+  background-color: rgba(23, 26, 31, 0); }
   #tasklist-button:hover {
-    color: #8c8c8c;
+    color: #bfbfbf;
     background-color: rgba(0, 0, 0, 0.17); }
   #tasklist-button:checked {
     color: white;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 0, 0, 0.25);
     box-shadow: inset 0 -2px #9bbfbf; }
 
 .xfce4-panel.panel button.flat {
-  color: #727272;
+  color: #a5a5a5;
   border-radius: 0;
   border: none;
-  background-color: rgba(235, 235, 235, 0);
+  background-color: rgba(23, 26, 31, 0);
   font-weight: normal; }
   .xfce4-panel.panel button.flat:hover {
     border: none;
-    background-color: rgba(255, 255, 255, 0.7); }
+    background-color: rgba(45, 51, 60, 0.7); }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
-    color: #727272;
+    color: #a5a5a5;
     border-bottom: 2px solid #9bbfbf;
-    background-color: rgba(222, 222, 222, 0.7); }
+    background-color: rgba(19, 21, 25, 0.7); }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
@@ -6102,19 +6102,19 @@ ConversationListView {
  * LightDm *
  ***********/
 #panel_window {
-  background-color: rgba(235, 235, 235, 0.7);
-  color: #727272;
+  background-color: rgba(23, 26, 31, 0.7);
+  color: #a5a5a5;
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(217, 217, 217, 0.7); }
+  box-shadow: inset 0 -1px rgba(8, 9, 11, 0.7); }
   #panel_window .menubar,
   #panel_window .menubar > .menuitem menubar,
   #panel_window menubar > menuitem {
     background-color: transparent;
-    color: #727272;
+    color: #a5a5a5;
     font-weight: bold; }
   #panel_window .menubar .menuitem:disabled,
   #panel_window menubar menuitem:disabled {
-    color: rgba(114, 114, 114, 0.5); }
+    color: rgba(165, 165, 165, 0.5); }
     #panel_window .menubar .menuitem:disabled GtkLabel,
     #panel_window menubar menuitem:disabled GtkLabel {
       color: inherit; }

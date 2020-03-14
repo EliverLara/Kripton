@@ -63,16 +63,16 @@ $drop_target_color: #a1ce4b;
 $text_shadow_color: if($variant == 'dark', $shadow_color, transparentize(white, 0.9));
 $icon_shadow_color: $text_shadow_color;
 
-$drop_target_color: #4e9a06;
+$drop_target_color: #8a997d;
 
 // Infobar colors
 $info_color: $lime;
 $question_color: $cyan;
 
 // Panel colors
-$panel_bg_color:rgba(235, 235, 235, 0.7);
-$panel_fg_color: $fg_color;
-$panel_borders_color: rgba(235, 235, 235, 0.7);
+$panel_bg_color: transparentize(#171a1f, 0.3);
+$panel_fg_color: #a5a5a5;
+$panel_borders_color: #171a1f;
 
 // Disabled state colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
