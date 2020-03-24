@@ -5669,7 +5669,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: #727272; }
   .nautilus-desktop .nautilus-canvas-item {
     border-radius: 5px;
-    color: #000;
+    color: #fff;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }
     .nautilus-desktop .nautilus-canvas-item:active {
       color: #727272;
