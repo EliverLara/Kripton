@@ -8,7 +8,8 @@ $entry_border: transparent;
 $mpris_overlay_fg: $fg_color;
 $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
 $mpris_overlay_border: $top_highlight;
-$panel_bg: transparentize( darken($headerbar_color,10%),0.05);
+$panel_bg: $panel_bg_color;
+$panel_fg: $panel_fg_color;
 $panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
 $panel_shadow: transparentize(black, 0.7);
 $raven_bg: transparentize($bg_color, 0.08);
@@ -343,7 +344,7 @@ button.raven-trigger {
 
 // Panel
 .budgie-panel {
-    color: $headerbar_fg_color;
+    color: $panel_fg;
     background-color: $panel_bg;
     background-image: none;
     box-shadow: none;
@@ -353,7 +354,7 @@ button.raven-trigger {
     .alert { color: $alert_color; }
 
     &:backdrop {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       background-color: $panel_bg;
     }
 
@@ -370,12 +371,12 @@ button.raven-trigger {
     }
 
     label {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       font-weight: 700;
     }
 
     &.transparent {
-        background-color: transparent;
+        background-color: transparentize($panel_bg_color, 0.45);
 
         .top & {
             border-bottom-color: transparent;
@@ -392,14 +393,17 @@ button.raven-trigger {
         .right & {
             border-left-color: transparent;
         }
+        &:backdrop, label, button.raven-trigger:backdrop, button.budgie-menu-launcher {
+          color: lighten($panel_fg, 20%);
+        }
     }
 
     .end-region {
       border-radius: 0px;
-      separator { background-color: transparentize($headerbar_fg_color, 0.85); }
+      separator { background-color: transparentize($panel_fg, 0.85); }
       label {
         font-weight: 700;
-        color: $headerbar_fg_color;
+        color: $panel_fg;
       }
     }
 }
