@@ -46,6 +46,7 @@ button {
       &:hover {
         transition: $button_transition;
         transition-duration: 500ms;
+        @include button(hover-header);
 
         &:active { transition: $button_transition; }
       }
@@ -101,6 +102,9 @@ button {
       min-width: 24px;
       padding-left: 4px;
       padding-right: 4px;
+      // &.flat:hover {
+      //   color: $fg_color;
+      // }
     }
 
     &.text-button {
