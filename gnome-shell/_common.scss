@@ -531,8 +531,10 @@ StScrollBar {
     spacing: 12px;
     margin: 0px 3px;
     border-radius: 5px 5px 0px 0px;
-    &:ltr { padding: .4em 1.75em .4em 0em; }
-    &:rtl { padding: .4em 0em .4em 1.75em; }
+    
+    &:ltr { padding-right:1.75em; padding-left: 0; }
+    &:rtl { padding-right: 0; padding-left:1.75em; }
+  
     &:checked {
      background-color: transparentize(darken($selected_bg_color, 4%), 0.7);
       color: $selected_bg_color;
@@ -577,13 +579,16 @@ StScrollBar {
   }
 
   .popup-separator-menu-item {
-    //-margin-horizontal: 24px;
-    height: 1px; //not really the whole box
-    margin: 6px 64px;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+
+    &, &-separator {
+      //-margin-horizontal: 24px;
+      height: 1px; //not really the whole box
+      margin: 6px 64px;
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
   }
 
 
@@ -847,6 +852,16 @@ StScrollBar {
       color: lighten($fg_color, 10%);
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
     }
+
+    // Remove default bottom border
+    &.clock-display {
+      &:active, &:overview, &:focus, &:checked {
+        box-shadow: none;
+        .clock {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
   .panel-status-indicators-box,
@@ -884,6 +899,11 @@ StScrollBar {
 
   .calendar {
     margin-bottom: 1em;
+  }
+
+  .calendar, .world-clocks-button, .weather-button {
+    background: transparent;
+    border: none;
   }
 
     .calendar,
@@ -1046,7 +1066,7 @@ StScrollBar {
         .message-title{
           color: darken($fg_color,3%);
         }
-        .message-content{
+        .message-content, .message-body {
           color: darken($fg_color,4%);
         }
       }
@@ -1346,7 +1366,14 @@ StScrollBar {
   }
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
-  .search-section-content { spacing: 32px; } // This is the space between the provider icon and the results container
+  .search-section-content { 
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    // This is the space between the provider icon and the results container
+    spacing: 32px; 
+  }
   .search-statustext { // "no results"
     @extend %status_text;
   }

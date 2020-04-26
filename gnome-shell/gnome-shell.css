@@ -508,9 +508,11 @@ StScrollBar {
     margin: 0px 3px;
     border-radius: 5px 5px 0px 0px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: .4em 1.75em .4em 0em; }
+      padding-right: 1.75em;
+      padding-left: 0; }
     .popup-menu .popup-menu-item:rtl {
-      padding: .4em 0em .4em 1.75em; }
+      padding-right: 0;
+      padding-left: 1.75em; }
     .popup-menu .popup-menu-item:checked {
       background-color: rgba(143, 183, 183, 0.3);
       color: #9bbfbf;
@@ -548,7 +550,7 @@ StScrollBar {
   -arrow-rise: 11px;
   -arrow-box-shadow: 0 1px 3px black; }
 
-.popup-separator-menu-item {
+.popup-separator-menu-item, .popup-separator-menu-item-separator {
   height: 1px;
   margin: 6px 64px;
   background-color: transparent;
@@ -777,6 +779,10 @@ StScrollBar {
       .lock-screen #panel .panel-button:hover,
       .lock-screen #panel .panel-button:active {
         color: #8c8c8c; }
+    #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+      box-shadow: none; }
+      #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+        box-shadow: none; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
@@ -800,6 +806,10 @@ StScrollBar {
 
 .calendar {
   margin-bottom: 1em; }
+
+.calendar, .world-clocks-button, .weather-button {
+  background: transparent;
+  border: none; }
 
 .calendar,
 .datemenu-today-button,
@@ -960,7 +970,7 @@ StScrollBar {
   width: 31.5em; }
   .message-list .message-title {
     color: #6a6a6a; }
-  .message-list .message-content {
+  .message-list .message-content, .message-list .message-body {
     color: #686868; }
 
 .message-list-clear-button.button {
@@ -1238,6 +1248,10 @@ StScrollBar {
   spacing: 16px; }
 
 .search-section-content {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
   spacing: 32px; }
 
 .list-search-results {
