@@ -550,13 +550,15 @@ StScrollBar {
   -arrow-rise: 11px;
   -arrow-box-shadow: 0 1px 3px black; }
 
-.popup-separator-menu-item, .popup-separator-menu-item-separator {
-  height: 1px;
-  margin: 6px 64px;
-  background-color: transparent;
-  border-color: transparent;
-  border-bottom-width: 1px;
-  border-bottom-style: solid; }
+.popup-separator-menu-item {
+  background: transparent; }
+  .popup-separator-menu-item-separator {
+    height: 1px;
+    margin: 6px 64px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -1011,7 +1013,8 @@ StScrollBar {
 .message {
   background: #15181d;
   border: 1px solid #101316;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: none; }
   .message:hover, .message:focus {
     background-color: #15181c;
     box-shadow: 3px 0px 0px 0px #9bbfbf inset; }
@@ -1522,7 +1525,8 @@ StScrollBar {
     spacing: 1px; }
   .notification-banner .notification-button {
     padding: 4px 4px 5px;
-    background-color: rgba(23, 26, 31, 0.9); }
+    background-color: rgba(23, 26, 31, 0.9);
+    box-shadow: none; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 3px; }
     .notification-banner .notification-button:last-child {

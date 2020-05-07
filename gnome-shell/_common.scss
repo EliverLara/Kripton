@@ -579,8 +579,8 @@ StScrollBar {
   }
 
   .popup-separator-menu-item {
-
-    &, &-separator {
+    background: transparent;
+    &-separator {
       //-margin-horizontal: 24px;
       height: 1px; //not really the whole box
       margin: 6px 64px;
@@ -1109,6 +1109,7 @@ StScrollBar {
           background: darken($bg_color, 0.7%);
           border: 1px solid $borders_color;
           border-radius: 5px;
+          box-shadow: none;
         }
 
           .message-icon-bin {
@@ -1646,6 +1647,7 @@ StScrollBar {
     .notification-button {
       padding: 4px 4px 5px;
       background-color: transparentize($bg_color, 0.1);
+      box-shadow: none;
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
       &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
