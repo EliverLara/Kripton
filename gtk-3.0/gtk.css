@@ -57,6 +57,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color content_view_bg #131519;
 @define-color budgie_tasklist_indicator_color #9bbfbf;
 @define-color budgie_tasklist_indicator_color_active #9bbfbf;
+@define-color placeholder_text_color #606061;
 /*****************
 * Drawing mixins *
 *****************/
@@ -5886,7 +5887,7 @@ LibraryWindow .the-button-in-the-combobox {
 
 /**level bars**/
 .sidebar .source-list.view.level-bar, .sidebar iconview.source-list.level-bar, .sidebar .source-list.view.level-bar:selected, .sidebar iconview.source-list.level-bar:selected, .sidebar .source-list.view.level-bar:selected:focus, .sidebar iconview.source-list.level-bar:selected:focus {
-  background-color: rgba(0, 0, 0, 0.14);
+  background: linear-gradient(to right, #343a44, #343a44);
   border: 1px solid rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
   border-radius: 2px; }
@@ -5896,7 +5897,7 @@ LibraryWindow .the-button-in-the-combobox {
 
 .sidebar .source-list.view.fill-block, .sidebar iconview.source-list.fill-block, .sidebar .source-list.view.fill-block:hover, .sidebar iconview.source-list.fill-block:hover, .sidebar .source-list.view.fill-block:selected, .sidebar iconview.source-list.fill-block:selected, .sidebar .source-list.view.fill-block:selected:focus, .sidebar iconview.source-list.fill-block:selected:focus {
   background-image: none;
-  background-color: #9bbfbf; }
+  background: linear-gradient(to right, #9bbfbf, #9bbfbf); }
 
 .xfce4-panel.panel {
   background-color: rgba(23, 26, 31, 0.7);
