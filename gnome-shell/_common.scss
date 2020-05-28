@@ -8,7 +8,7 @@ $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula,0.35);
+$topbar_bg_color: transparentize($dracula, 0.17);
 
 stage {
   font-family: $font-family;
@@ -1175,6 +1175,55 @@ StScrollBar {
           }
 
 
+  /* World clocks */
+  .world-clocks-button {
+
+    // city label
+    .world-clocks-city {
+      color: $fg_color;
+      font-weight: normal;
+    }
+  
+    // timezone time
+    .world-clocks-time {
+      font-weight: bold;
+      color: $fg_color;
+      font-feature-settings: "lnum";
+      text-align: right;
+    }
+  
+    // timezone offset label
+    .world-clocks-timezone {
+      color: darken($fg_color, 20%);
+      font-feature-settings: "tnum";
+    }
+  }
+  
+  /* Weather */
+  .weather-button {
+  
+    .weather-header {
+      color: darken($fg_color, 10%);
+      font-weight: bold;
+  
+      &.location {
+        font-weight: normal;
+      }
+    }
+  
+    .weather-forecast-time {
+      color: darken($fg_color, 10%);
+      font-feature-settings: "tnum";
+      font-weight: normal;
+      padding-top: 0.2em;
+      padding-bottom: 0.4em;
+    }
+  
+    .weather-forecast-temp {
+      font-weight: bold;
+    }
+  }
+  
   // a little unstructured mess:
 
   .system-switch-user-submenu-icon.user-icon {
