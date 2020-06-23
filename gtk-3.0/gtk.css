@@ -3023,7 +3023,7 @@ menu,
 .context-menu {
   margin: 4px;
   padding: 2px 0px;
-  background-color: #14161a;
+  background-color: #0e0e11;
   border: 1px solid #08090b;
   border-radius: 5px; }
   .csd menu, .csd
@@ -3094,7 +3094,7 @@ menu,
     min-height: 16px;
     min-width: 16px;
     padding: 4px;
-    background-color: #14161a;
+    background-color: #0e0e11;
     border-radius: 0; }
     menu > arrow.top,
     .menu > arrow.top,
@@ -3446,7 +3446,7 @@ paned.vertical > separator {
 popover.background {
   padding: 2px;
   border-radius: 5px;
-  background-color: #131519;
+  background-color: #0e0e11;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
   .csd popover.background, popover.background {
     border: 1px solid #08090b; }
@@ -4648,7 +4648,7 @@ decoration {
     box-shadow: none; }
   .csd.popup decoration {
     border-radius: 7px;
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 1px 7px rgba(8, 9, 11, 0.7); }
   tooltip.csd decoration {
     border-radius: 5px;
     box-shadow: none; }
