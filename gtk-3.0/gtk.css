@@ -3447,7 +3447,7 @@ popover.background {
   padding: 2px;
   border-radius: 5px;
   background-color: #0e0e11;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1px 5px rgba(8, 9, 11, 0.7); }
   .csd popover.background, popover.background {
     border: 1px solid #08090b; }
   popover.background:backdrop {
