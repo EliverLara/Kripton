@@ -84,23 +84,6 @@ headerbar {
       }
     }
 
-
-    //Reset style
-    &.titlebutton {
-      color: transparent;
-      box-shadow: none;
-
-      &:hover,
-      &:active,
-      &:checked,
-      &:backdrop,
-      &:backdrop:hover,* {
-        color: transparent;
-        box-shadow: none;
-        background-color: transparent;
-      }
-    }
-
     @each $b_type, $b_color in (suggested-action, $cyan),
     (destructive-action, $destructive_color) {
       &.#{$b_type} {
