@@ -39,6 +39,18 @@
 @define-color warning_color #aa4b1a;
 @define-color error_color #b72f1d;
 @define-color success_color #70af5a;
+@define-color fg_color #727272;
+@define-color text_color #727272;
+@define-color bg_color #171a1f;
+@define-color base_color #131519;
+@define-color selected_bg_color #9bbfbf;
+@define-color selected_fg_color #000;
+@define-color unfocused_fg_color #454648;
+@define-color unfocused_text_color #727272;
+@define-color unfocused_bg_color #171a1f;
+@define-color unfocused_base_color #15171c;
+@define-color unfocused_selected_bg_color #9bbfbf;
+@define-color unfocused_selected_fg_color #000;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title shade(#727272, 1.8);
