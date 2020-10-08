@@ -5,11 +5,10 @@
         -GtkTreeView-vertical-separator: 10; 
         .view.cell,
         iconview.cell {
-            &:hover {
-                background: transparentize(darken($bg_color, 3%), 0.3);
-            }
+            &:hover { background: transparentize(darken($bg_color, 3%), 0.3); }
             &:selected {
                 background: $selected_bg_color;
+                color: $selected_fg_color;
             }
         }
     }
@@ -51,11 +50,14 @@
             border-radius: 4px;
             margin-top: 5px;
             margin-bottom: 5px;
-            height: 24px;
+            min-height: 24px;
             &:hover,
             &:selected,
             &:active,
-            &:checked { @include button(hover-header); }
+            &:checked { 
+                @include button(hover-header);
+                &:backdrop label{ color: $selected_bg_color;}
+            }
         }
     }
 }

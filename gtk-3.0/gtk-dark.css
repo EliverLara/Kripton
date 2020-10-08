@@ -6274,7 +6274,8 @@ ConversationListView {
     background: rgba(17, 19, 22, 0.7); }
   .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
   .nemo-window .places-treeview iconview.cell:selected {
-    background: #9bbfbf; }
+    background: #9bbfbf;
+    color: #000; }
 
 .nemo-window .sidebar {
   background-color: #131519; }
@@ -6307,8 +6308,10 @@ ConversationListView {
     border-radius: 4px;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: 24px; }
+    min-height: 24px; }
     .nemo-window toolbar.primary-toolbar button:hover, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       background-color: rgba(155, 191, 191, 0.3);
       color: #9bbfbf;
       text-shadow: none; }
+      .nemo-window toolbar.primary-toolbar button:hover:backdrop label, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
+        color: #9bbfbf; }
