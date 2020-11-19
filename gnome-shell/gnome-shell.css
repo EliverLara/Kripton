@@ -29,7 +29,7 @@ stage {
   .button:insensitive {
     color: #454649;
     background-color: rgba(33, 36, 40, 0.66);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
@@ -57,7 +57,7 @@ stage {
   .modal-dialog-linked-button:insensitive {
     color: #454649;
     background-color: rgba(33, 36, 40, 0.66);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
@@ -96,7 +96,7 @@ stage {
 StEntry {
   background-color: #262b33;
   border-color: #101316;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 4px;
   border-width: 0;
@@ -104,10 +104,10 @@ StEntry {
   selection-background-color: #9bbfbf;
   selected-color: #fefefe; }
   StEntry:focus {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   StEntry:insensitive {
     color: #454649;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   StEntry StIcon.capslock-warning {
     icon-size: 16px;
     warning-color: #ff9027;
@@ -665,6 +665,7 @@ StScrollBar {
   height: 50px;
   background-color: #9bbfbf;
   color: #fefefe;
+  border: none;
   background-size: 32px;
   border-radius: 8px; }
 
@@ -951,7 +952,18 @@ StScrollBar {
 
 .calendar-today {
   font-weight: bold;
-  border: 1px solid rgba(16, 19, 22, 0.5); }
+  border: 1px solid #9bbfbf;
+  background-color: transparent;
+  color: #fefefe; }
+  .calendar-today:hover, .calendar-today:focus {
+    background-color: #a4c5c5;
+    color: #fefefe; }
+  .calendar-today:active, .calendar-today:selected {
+    background-color: #9bbfbf;
+    color: #fefefe; }
+    .calendar-today:active:hover, .calendar-today:active:focus, .calendar-today:selected:hover, .calendar-today:selected:focus {
+      background-color: #a4c5c5;
+      color: #fefefe; }
 
 .calendar-day-with-events {
   color: #8c8c8c;
@@ -1262,12 +1274,12 @@ StScrollBar {
   border: 1px solid #101316;
   color: #727272;
   background-color: rgba(23, 26, 31, 0.6);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .search-entry:focus {
     border: 1px solid rgba(155, 191, 191, 0.5);
     color: #727272;
     background-color: rgba(23, 26, 31, 0.8);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
@@ -1410,7 +1422,7 @@ StScrollBar {
   .grid-search-result:active .overview-icon,
   .grid-search-result:checked .overview-icon {
     background-color: rgba(8, 9, 11, 0.85);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     color: #727272; }
   .app-well-app:hover .overview-icon,
   .app-well-app:focus .overview-icon,
@@ -1448,7 +1460,7 @@ StScrollBar {
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .app-well-app.app-folder > .overview-icon {
   background-color: rgba(23, 26, 31, 0.35); }
@@ -1513,7 +1525,7 @@ StScrollBar {
 
 .workspace-thumbnail-indicator {
   border: 4px solid rgba(155, 191, 191, 0.5);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0; }
 
 .search-display > StBoxLayout,
@@ -1805,7 +1817,7 @@ StScrollBar {
       .login-dialog .modal-dialog-button:default:insensitive {
         color: #454649;
         background-color: rgba(33, 36, 40, 0.66);
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
         border: none;
         text-shadow: none;
         icon-shadow: none; }
