@@ -973,6 +973,7 @@ StScrollBar {
       color: darken($fg_color, 10%);
       font-weight: bold;
     }
+    .event-time { color: darken($fg_color, 4%);}
 
     .world-clocks-grid {
       spacing-rows: 0.4em;
