@@ -921,6 +921,10 @@ StScrollBar {
   .calendar-change-month-forward:rtl {
     background-image: url("assets/calendar-arrow-left.svg"); }
 
+.calendar-change-month-back StIcon,
+.calendar-change-month-forward StIcon {
+  color: #656565; }
+
 .calendar-day-base {
   font-size: 80%;
   text-align: center;
