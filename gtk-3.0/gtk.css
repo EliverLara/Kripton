@@ -4400,6 +4400,7 @@ switch {
   border: 1px solid transparent;
   border-radius: 14px;
   color: transparent;
+  padding: 2.3px 0px;
   background-color: #292d36;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(0, 0, 0, 0.1); }
   switch:disabled {
@@ -4411,25 +4412,25 @@ switch {
     switch:backdrop:disabled {
       background-color: #1a1c22; }
   switch:active, switch:checked {
-    background-color: rgba(69, 133, 136, 0.6); }
+    background-color: rgba(69, 133, 136, 0.8);
+    box-shadow: 0px 0px 4px rgba(69, 133, 136, 0.6); }
     switch:active:backdrop, switch:checked:backdrop {
       background-color: rgba(69, 133, 136, 0.5); }
   switch slider {
-    padding: 0px;
+    padding: 2px;
+    margin: 0 2.3px;
     min-width: 12px;
     min-height: 12px;
-    margin: -3px;
     border-radius: 100%;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: gray;
+    background-color: #131519;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2); }
     switch slider:backdrop {
       padding: 2px;
       box-shadow: none;
       background-color: #131519; }
   switch:checked slider {
-    background: rgba(69, 133, 136, 0.9);
-    box-shadow: 0px 0px 4px rgba(69, 133, 136, 0.6); }
+    background: #131519; }
     switch:checked slider:backdrop {
       box-shadow: none;
       background-color: rgba(19, 21, 25, 0.9);
