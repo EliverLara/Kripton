@@ -3,9 +3,9 @@
 
 // Main definitions
 $base_color: if($variant == 'light', #f8f8f8, #131519);
-$text_color: if($variant == 'light', #31363D, lighten(#686868, 4%));
+$text_color: if($variant == 'light', #31363D, lighten(#686868, 25%));
 $bg_color: if($variant == 'light', #EEEEEE, lighten(#131519, 2%));
-$fg_color: if($variant == 'light', #31363d, lighten(#686868, 4%));
+$fg_color: if($variant == 'light', #31363d, lighten(#686868, 25%));
 
 // Primary colors
 $lime: #989719;
