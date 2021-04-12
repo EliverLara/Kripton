@@ -6133,7 +6133,7 @@ MsdOsdWindow.background.osd {
     border-color: #9bbfbf;
     border-radius: 5px; }
   MsdOsdWindow.background.osd .trough {
-    background-color: rgba(9, 10, 12, 0.8);
+    background-color: rgba(30, 33, 39, 0.98);
     border: none;
     border-radius: 5px; }
 
@@ -6378,3 +6378,10 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   color: #9bbfbf;
   border-radius: 0;
   box-shadow: none; }
+
+.caja-notebook .entry {
+  background: #131519;
+  color: #a8a8a8; }
+  .caja-notebook .entry:selected {
+    background: #9bbfbf;
+    color: #000; }
