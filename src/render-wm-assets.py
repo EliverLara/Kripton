@@ -32,16 +32,16 @@ def wait_for_prompt(process, command=None):
         return
 
     output += process.stdout.read(1)
-    while output != b'\n>':
-        output += process.stdout.read(1)
-        output = output[1:]
+    # while output != b'\n>':
+    #     output += process.stdout.read(1)
+    #     output = output[1:]
 
 
 def start_inkscape():
     process = subprocess.Popen(
-        [INKSCAPE, '--shell'],
-        bufsize=0, stdin=subprocess.PIPE, stdout=subprocess.PIPE
-        )
+        [INKSCAPE, '--shell'], bufsize=0,
+        stdin=subprocess.PIPE, stdout=subprocess.PIPE
+    )
     wait_for_prompt(process)
     return process
 
@@ -51,9 +51,11 @@ def inkscape_render_rect(icon_file, rect, output_file):
     if inkscape_process is None:
         inkscape_process = start_inkscape()
     wait_for_prompt(inkscape_process,
-                    '%s -i %s -e %s' % (icon_file, rect, output_file)
+                    'file-open:%s; export-id:%s; export-filename:%s; export-do'
+                    % (icon_file, rect, output_file)
                     )
     optimize_png(output_file)
+
 
 
 class ContentHandler(xml.sax.ContentHandler):
