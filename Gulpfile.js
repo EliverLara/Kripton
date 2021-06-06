@@ -12,7 +12,7 @@ gulp.task('styles', function(done) {
 });
 
 gulp.task('shell-style', function(done) {
-    gulp.src('gnome-shell/*.scss')
+    gulp.src('gnome-shell/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gnome-shell/'))
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Kripton"'))
@@ -25,5 +25,5 @@ gulp.task('default',function() {
 });
 
 gulp.task('shell',function() {
-    gulp.watch('gnome-shell/*.scss', gulp.series('shell-style'));
+    gulp.watch('gnome-shell/**/*.scss', gulp.series('shell-style'));
 });
