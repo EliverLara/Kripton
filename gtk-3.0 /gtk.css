@@ -6384,6 +6384,11 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   border-radius: 0;
   box-shadow: none; }
 
+/* Thunar Toolbar*/
+.thunar toolbar .path-bar-button {background: transparent; border: none; box-shadow: none;}
+.thunar toolbar .path-bar-button:checked {background:  #3f4b4f; color: #81a9ab;}
+/**/
+
 .caja-notebook .entry {
   background: #131519;
   color: #a8a8a8; }
