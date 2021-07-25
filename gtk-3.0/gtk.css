@@ -6361,24 +6361,32 @@ scrolledwindow.sidebar treeview.view {
   padding: 1.5px; }
 
 /* path-bar of thunar */
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button {
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button,
+.thunar toolbar .path-bar-button {
   border-radius: 4px; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover {
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover,
+  .thunar toolbar .path-bar-button:hover {
     color: #9bbfbf; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked {
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked,
+  .thunar toolbar .path-bar-button:checked {
     background-color: rgba(155, 191, 191, 0.3);
     color: #9bbfbf;
     text-shadow: none; }
-    window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label {
+    window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label,
+    .thunar toolbar .path-bar-button:checked:backdrop label {
       color: rgba(155, 191, 191, 0.6); }
 
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button,
+.thunar toolbar .path-bar-button {
   background: none;
   outline: none;
   border: none;
   box-shadow: none; }
 
 /* thunar sidepane */
+window.thunar paned > scrolledwindow treeview.view:hover {
+  background: #1a1c22; }
+
 window.thunar paned > scrolledwindow treeview.view:selected {
   color: #9bbfbf;
   border-radius: 0;

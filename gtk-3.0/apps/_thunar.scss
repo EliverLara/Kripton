@@ -15,7 +15,8 @@
   }
   
   /* path-bar of thunar */
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button {
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button,
+  .thunar toolbar .path-bar-button {
     border-radius: 4px;
     &:hover { color: $selected_bg_color; }
     &:checked { 
@@ -24,16 +25,23 @@
     }
   }
   
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button,
+  .thunar toolbar .path-bar-button {
     background: none;
     outline: none;
     border: none;
     box-shadow: none;
   }
   
-  /* thunar sidepane */
-  window.thunar paned > scrolledwindow treeview.view:selected {
+/* thunar sidepane */
+window.thunar paned > scrolledwindow treeview.view {
+
+  &:hover {
+    background: lighten($base_color, 3%);
+  }
+  &:selected {
     color: $selected_bg_color;
     border-radius: 0;
     box-shadow: none;
   }
+}
