@@ -1174,14 +1174,21 @@ StScrollBar {
   icon-size: 1.09em; }
 
 .window-close {
-  background-color: transparent;
-  background-image: url("assets/close-window.svg");
-  background-size: 32px;
-  border: none;
-  box-shadow: none;
-  color: transparent;
-  height: 32px;
-  width: 32px; }
+  background-color: rgba(23, 26, 31, 0.95);
+  color: #b2b2b2;
+  border-radius: 21px;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  transition-duration: 300ms; }
+  .window-close StIcon {
+    icon-size: 24px; }
+  .window-close:hover {
+    background-color: rgba(56, 63, 75, 0.95); }
+  .window-close:active {
+    color: rgba(114, 114, 114, 0.8);
+    background-color: rgba(12, 14, 16, 0.95); }
 
 .window-close {
   -shell-close-overlap: 16px; }
