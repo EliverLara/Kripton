@@ -1391,7 +1391,7 @@ StScrollBar {
   .show-apps:checked .overview-icon,
   .grid-search-result:active .overview-icon,
   .grid-search-result:checked .overview-icon {
-    background-color: #010102;
+    background-color: #272b33;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     color: #727272; }
   .app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
@@ -1404,7 +1404,7 @@ StScrollBar {
   .grid-search-result:hover .overview-icon,
   .grid-search-result:focus .overview-icon,
   .grid-search-result:selected .overview-icon {
-    background-color: #08090b;
+    background-color: #272b33;
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
@@ -1430,7 +1430,7 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: #101316; }
+  background-color: #272b33; }
 
 .app-folder-dialog {
   background-color: #101316; }
