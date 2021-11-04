@@ -9,7 +9,6 @@ $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
 $topbar_bg_color: transparentize($dracula, 0.17);
-$_dash_bg: darken($bg_color, 3%);
 
 stage {
   font-family: $font-family;
@@ -20,7 +19,7 @@ stage {
 /* WIDGETS */
 
 /* Buttons */
-.button, %button {
+.button {
   @include button(normal);
   border-radius: 4px;
   border-width: 0;
@@ -529,7 +528,11 @@ StScrollBar {
 
   }
 
-  .popup-menu-content { padding: 1em 0em; }
+  .popup-menu-content { 
+    padding: 1em 0em;
+    background-color: $bg_color;
+    border-radius: 8px;
+  }
   .popup-menu-item {
     spacing: 12px;
     margin: 0px 3px;
@@ -727,7 +730,7 @@ StScrollBar {
     height: 50px;
     background-color: $selected_bg_color;
     color: $selected_fg_color;
-    border: 1pc solid $selected_bg_color;
+    border: none;
     background-size: 32px;
     border-radius: 8px;
   }
@@ -779,7 +782,7 @@ StScrollBar {
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
-  height: 2.1em;
+  height: 1.86em;
   padding: 0px 0px;
 
   &.unlock-screen,
@@ -831,33 +834,25 @@ StScrollBar {
     }
 
     &:hover {
-      box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+      background: lighten($topbar_bg_color, 10%);
       color: lighten($topbar_color, 10%);
-      &.clock-display {
-        box-shadow: none;
-
-        .clock {
-          box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
-        }
-      }
+      transition-duration: 200ms;
     }
 
     &:active, &:overview, &:focus, &:checked {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
-      
+      box-shadow: none;
+      @include gradient();
       color: $selected_fg_color;
       text-shadow: 0px 0px 2px rgba(92, 92, 92, 0.9);
-      box-shadow: inset 0 0 0 100px $selected_bg_color;
-
-      &.clock-display {
-        box-shadow: none;
-
-        .clock {
-          box-shadow: inset 0 0 0 100px $selected_bg_color;
-        }
+      transition-duration: 200ms;
+      .system-status-icon,
+      .app-menu-icon > StIcon,
+      .popup-menu-arrow {
+        icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
       }
-
+      & > .system-status-icon { icon-shadow: red 0 2px 2px; }
     }
 
     .system-status-icon { icon-size: 1.09em; padding: 0 5px; }
@@ -866,6 +861,16 @@ StScrollBar {
     .lock-screen & {
       color: lighten($fg_color, 10%);
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
+    }
+
+    // Remove default bottom border
+    &.clock-display {
+      &:active, &:overview, &:focus, &:checked {
+        box-shadow: none;
+        .clock {
+          box-shadow: none;
+        }
+      }
     }
   }
 
@@ -909,8 +914,6 @@ StScrollBar {
   .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
     border: none;
-    box-shadow: none;
-    color: $fg_color;
   }
 
     .calendar,
@@ -979,7 +982,7 @@ StScrollBar {
       color: darken($fg_color, 10%);
       font-weight: bold;
     }
-    .events-button .event-time { color: darken($fg_color, 4%);}
+    .event-time { color: darken($fg_color, 4%);}
 
     .world-clocks-grid {
       spacing-rows: 0.4em;
@@ -1390,12 +1393,12 @@ StScrollBar {
 
 /* OVERVIEW */
 
-#overview,.controls-manager, .secondary-monitor-workspaces {
+#overview {
   spacing: 24px; //
 }
 
-#overviewGroup {
-  background-color: $bg_color;
+#overview.cosmic-solid-bg {
+  background-color: $base_color !important;
 }
 
 .overview-controls {
@@ -1405,6 +1408,7 @@ StScrollBar {
   .window-picker { //container around window thumbnails
     -horizontal-spacing: 16px;
     -vertical-spacing: 16px;
+    padding: 0 16px 16px;
 
     &.external-monitor { padding: 16px; }
   }
@@ -1420,8 +1424,8 @@ StScrollBar {
   .window-caption {
     spacing: 20px;
     color: $topbar_color;
-    background-color: $topbar_bg_color;
-    border-radius: 7px;
+    background-color: transparentize($osd_bg_color,.3);
+    border-radius: 2px;
     padding: 4px 8px;
   }
 
@@ -1429,18 +1433,24 @@ StScrollBar {
   .search-entry {
     width: 320px;
     padding: 9px;
-    border: 1px solid $borders_color;
     border-radius: 100px;
+    border: 1px solid $borders_color;
     color: $fg_color;
-    background-color: $_dash_bg;
+    background-color: transparentize($bg_color, 0.4);
     box-shadow: $depth;
+    &:focus {
+      border: 1px solid transparentize($selected_bg_color, 0.5);
+      color: $fg_color;
+      background-color: transparentize($bg_color, 0.2);
+      box-shadow: $depth2;
+    }
+
+    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
     &:hover, &:focus {
-      background-color: $_dash_bg;
-      border-color: transparentize($selected_bg_color, 0.5);
+      background-color: transparentize($bg_color, 0.2);
       .search-entry-icon { color: $fg_color; }
     }
-    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
   }
 
   //search results
@@ -1467,7 +1477,7 @@ StScrollBar {
   .search-statustext { // "no results"
     @extend %status_text;
   }
-  
+
   %search-section-content-item {  
     &:focus,
     &:hover,
@@ -1499,16 +1509,36 @@ StScrollBar {
     @extend %search-section-content-item;
   }
 
-
   /* DASHBOARD */
 
-  .dash-background {
-    background-color: $_dash_bg;
+  #dash {
+    font-size: 9pt;
+    color: $topbar_color;
+    background-color: $topbar_bg_color;
+    padding: 6px 0;
+    border: 1px solid $borders_color;
+    border-left: 0px;
+    border-radius: 0px 5px 5px 0px;
+
+    &:rtl {
+      border-radius: 9px 0 0 9px;
+    }
+
+    .placeholder {
+      background-image: url("assets/dash-placeholder.svg");
+      background-size: contain;
+      height: 24px;
+    }
+
+    .empty-dash-drop-target {
+      width: 24px;
+      height: 24px;
+    }
+
   }
 
-  .dash-separator {
-    width: 1px;
-    background-color: $gray;
+  .dash-item-container > StWidget {
+    padding: 4px 8px;
   }
 
   .dash-label { //osd tooltip
@@ -1517,7 +1547,6 @@ StScrollBar {
     color: $topbar_color;
     background-color: $topbar_bg_color;
     text-align: center;
-    border: 1px solid $borders_color;
     -x-offset: 8px;
   }
 
@@ -1563,18 +1592,16 @@ StScrollBar {
     & .overview-icon {
       @extend %icon_tile;
     }
-
     &:active .overview-icon,
     &:checked .overview-icon {
-      background-color: darken($_dash_bg, 7%);
+      background-color: transparentize(darken($osd_bg_color,7%),.1);
       box-shadow: inset $depth2;
       color: $fg_color;
     }
-
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: darken($_dash_bg, 4%);
+      background-color: transparentize($bg_color,.5);
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
@@ -1592,31 +1619,13 @@ StScrollBar {
 
   %icon_tile {
     color: $selected_fg_color;
-    padding: 6px;
+    border-radius: 2px;
+    padding: 7px 6px;
     border: none;
     transition-duration: 100ms;
     text-align: center;
-    box-shadow: none;
+    box-shadow: $depth;
   }
-
-    /* App Folders */
-.app-well-app.app-folder {
-  background-color: $_dash_bg;
-}
-// expanded folder
-.app-folder-dialog { //style like the dash
-  background-color:  $_dash_bg;
-  .edit-folder-button {
-    @extend %button;
-
-    padding: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
-
-    & > StIcon { icon-size: 16px }
-  }
-}
 
   .app-well-app.app-folder > .overview-icon {
     background-color: transparentize($osd_bg_color,.6);
