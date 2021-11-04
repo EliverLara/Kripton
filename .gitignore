@@ -1,2 +1,8 @@
-node_modules
+# Dependency directories
+node_modules/
+
+# Sass
+.sass-cache/
+*.css.map
+
 install.sh
