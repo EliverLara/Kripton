@@ -11,8 +11,6 @@
 }
 
 ConversationListView {
-  -GtkTreeView-grid-line-width: 0;
-
   .view {
     &:active,
     &:selected {
