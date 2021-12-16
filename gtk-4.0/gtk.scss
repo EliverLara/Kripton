@@ -2,9 +2,9 @@
 
 $variant: 'dark';
 
-@import '../gtk-3.20/colors';
-@import '../gtk-3.20/elementary-colors';
-@import '../gtk-3.20/colors-public';
+@import '../gtk-3.0/colors';
+@import '../gtk-3.0/elementary-colors';
+@import '../gtk-3.0/colors-public';
 @import 'drawing';
 @import 'common';
 @import 'widgets';
