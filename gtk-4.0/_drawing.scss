@@ -69,7 +69,7 @@
   @if $t==normal {
     color: $text_color;
     border-color: $borders_color;
-    background-color: $base_color;
+    background-color: lighten($base_color, 7%);
     // for the transition to work the number of shadows in different states needs to match, hence the transparent shadow here.
   }
   @if $t==focus {
@@ -209,7 +209,7 @@
     font-weight: normal;
     color: $tc;
     outline-color: transparentize($tc, 0.7);
-    background-color: $c;
+    background-color: if($c == $base_color, lighten($c, 7%), $c);
     text-shadow: none;
     @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
   }
