@@ -1362,7 +1362,10 @@ StScrollBar {
 
   .nm-dialog-airplane-text { color: $fg_color; }
   .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 2px solid $borders_color; }
+  .nm-dialog-scroll-view { 
+    border: 2px solid $borders_color;
+    background-color: $bg_color;
+  }
   .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
