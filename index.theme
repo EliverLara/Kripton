@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Kripton
+Name=Kripton-standard-buttons
 Comment=A dark theme with flat style for GNOME
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Kripton
-MetacityTheme=Kripton
-IconTheme=Boston
+GtkTheme=Kripton-standard-buttons
+MetacityTheme=Kripton-standard-buttons
+IconTheme=Mint-Y
 ButtonLayout=:minimize,maximize,close
