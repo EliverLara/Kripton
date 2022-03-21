@@ -7,5 +7,5 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Kripton
 MetacityTheme=Kripton
-IconTheme=Boston
+IconTheme=Mint-Y
 ButtonLayout=:minimize,maximize,close
