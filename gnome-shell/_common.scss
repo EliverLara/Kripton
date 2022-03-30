@@ -12,7 +12,6 @@ $topbar_bg_color: transparentize($dracula, 0.17);
 $_dash_bg: darken($bg_color, 3%);
 
 stage {
-  font-family: $font-family;
   @include fontsize($font-size);
   color: $fg_color;
 }
