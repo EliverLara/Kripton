@@ -97,7 +97,7 @@ stage {
 
 /* Entries */
 StEntry {
-  background-color: #262b33;
+  background-color: #22262d;
   border-color: #101316;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -107,7 +107,8 @@ StEntry {
   selection-background-color: #9bbfbf;
   selected-color: #fefefe; }
   StEntry:focus {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 1px 1px #9bbfbf; }
   StEntry:insensitive {
     color: #626466;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
