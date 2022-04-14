@@ -95,17 +95,19 @@ stage {
 
 /* Entries */
 StEntry {
-  background-color: #262b33;
+  background-color: #22262d;
   border-color: #101316;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 4px;
-  border-width: 0;
   color: #ADADAD;
   selection-background-color: #9bbfbf;
   selected-color: #fefefe; }
+  StEntry:hover {
+    box-shadow: inset 0px 0px 1px 1px #9bbfbf; }
   StEntry:focus {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 1px 1px #9bbfbf; }
   StEntry:insensitive {
     color: #626466;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
@@ -1245,12 +1247,9 @@ StScrollBar {
   width: 320px;
   padding: 9px;
   border: 1px solid #101316;
-  border-radius: 100px;
-  color: #ADADAD;
-  background-color: #101316;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  border-radius: 10px;
+  color: #ADADAD; }
   .search-entry:hover, .search-entry:focus {
-    background-color: #101316;
     border-color: rgba(155, 191, 191, 0.5); }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #ADADAD; }
