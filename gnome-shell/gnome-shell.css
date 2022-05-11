@@ -500,6 +500,8 @@ StScrollBar {
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
   .popup-menu .popup-menu-content {
+    background-color: #15181c;
+    border: none;
     padding: 1em 0em; }
   .popup-menu .popup-menu-item {
     spacing: 12px;
@@ -512,17 +514,18 @@ StScrollBar {
       padding-right: 0;
       padding-left: 1.75em; }
     .popup-menu .popup-menu-item:checked {
-      background-color: rgba(143, 183, 183, 0.3);
+      background-color: rgba(143, 183, 183, 0.3) !important;
       color: #9bbfbf;
-      font-weight: normal; }
+      font-weight: normal;
+      box-shadow: none; }
       .popup-menu .popup-menu-item:checked:hover {
         background-color: rgba(143, 183, 183, 0.5);
         color: #9bbfbf; }
     .popup-menu .popup-menu-item.selected {
-      background-color: rgba(173, 173, 173, 0.1);
+      background-color: rgba(173, 173, 173, 0.1) !important;
       color: #ADADAD; }
     .popup-menu .popup-menu-item:active {
-      background-color: #9bbfbf;
+      background-color: rgba(143, 183, 183, 0.3) !important;
       color: #fefefe; }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(173, 173, 173, 0.5); }
@@ -918,7 +921,8 @@ StScrollBar {
   .calendar-day-base:active, .calendar-day-base:selected {
     color: #fefefe;
     background-color: #9bbfbf;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
     color: #949494;
     margin-top: 1em;
@@ -973,7 +977,8 @@ StScrollBar {
 
 /* Message list */
 .message-list {
-  width: 31.5em; }
+  width: 31.5em;
+  border: none; }
   .message-list .message-title {
     color: #a5a5a5; }
   .message-list .message-content, .message-list .message-body {
@@ -1414,10 +1419,12 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: #272b33; }
+  background-color: #272b33;
+  border-radius: 12px; }
 
 .app-folder-dialog {
-  background-color: #101316; }
+  background-color: #101316;
+  border: none; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
