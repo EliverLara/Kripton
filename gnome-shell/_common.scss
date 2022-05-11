@@ -523,10 +523,13 @@ StScrollBar {
     background-color:  transparentize(lighten($main_dark, 23%), 0.8);
     border-radius: 0px 0px 5px 5px;
     box-shadow: $depth6;
-
   }
 
-  .popup-menu-content { padding: 1em 0em; }
+  .popup-menu-content { 
+    background-color: darken($bg_color, 1%);
+    border: none;
+    padding: 1em 0em; 
+  }
   .popup-menu-item {
     spacing: 12px;
     margin: 0px 3px;
@@ -536,16 +539,17 @@ StScrollBar {
     &:rtl { padding-right: 0; padding-left:1.75em; }
   
     &:checked {
-     background-color: transparentize(darken($selected_bg_color, 4%), 0.7);
+      background-color: transparentize(darken($selected_bg_color, 4%), 0.7) !important;
       color: $selected_bg_color;
       font-weight: normal;
+      box-shadow: none;
       &:hover{
         background-color: transparentize(darken($selected_bg_color, 4%), 0.5);
         color: $selected_bg_color;
       }
     }
-    &.selected { background-color: transparentize($fg_color,0.9); color: $fg_color; }
-    &:active { background-color: $selected_bg_color; color: $selected_fg_color; }
+    &.selected { background-color: transparentize($fg_color,0.9) !important; color: $fg_color; }
+    &:active { background-color: transparentize(darken($selected_bg_color, 4%), 0.7) !important; color: $selected_fg_color; }
     &:insensitive { color: transparentize($fg_color,.5); }
   }
 
@@ -1028,6 +1032,7 @@ StScrollBar {
         color: $selected_fg_color;
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
+        box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
         color: darken($fg_color, 10%);
@@ -1091,6 +1096,7 @@ StScrollBar {
       /* Message list */
       .message-list {
         width: 31.5em;
+        border: none;
         .message-title{
           color: darken($fg_color,3%);
         }
@@ -1596,10 +1602,12 @@ StScrollBar {
     /* App Folders */
 .app-well-app.app-folder {
   background-color: lighten($base_color, 9%);
+  border-radius: 12px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
   background-color:  $_dash_bg;
+  border: none;
   .edit-folder-button {
     @extend %button;
 
