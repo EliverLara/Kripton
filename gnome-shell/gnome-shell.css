@@ -494,72 +494,81 @@ StScrollBar {
   min-width: 15em;
   background-color: transparent;
   color: #ADADAD; }
-  .popup-menu .popup-sub-menu {
-    margin: 0px 3px;
-    background-color: rgba(62, 70, 84, 0.2);
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
-  .popup-menu .popup-menu-content {
-    background-color: #15181c;
-    border: none;
-    padding: 1em 0em; }
-  .popup-menu .popup-menu-item {
-    spacing: 12px;
-    margin: 0px 3px;
-    border-radius: 5px 5px 0px 0px; }
-    .popup-menu .popup-menu-item:ltr {
-      padding-right: 1.75em;
-      padding-left: 0; }
-    .popup-menu .popup-menu-item:rtl {
-      padding-right: 0;
-      padding-left: 1.75em; }
-    .popup-menu .popup-menu-item:checked {
-      background-color: rgba(143, 183, 183, 0.3) !important;
-      color: #9bbfbf;
-      font-weight: normal;
-      box-shadow: none; }
-      .popup-menu .popup-menu-item:checked:hover {
-        background-color: rgba(143, 183, 183, 0.5);
-        color: #9bbfbf; }
-    .popup-menu .popup-menu-item.selected {
-      background-color: rgba(173, 173, 173, 0.1) !important;
-      color: #ADADAD; }
-    .popup-menu .popup-menu-item:active {
-      background-color: rgba(143, 183, 183, 0.3) !important;
-      color: #fefefe; }
-    .popup-menu .popup-menu-item:insensitive {
-      color: rgba(173, 173, 173, 0.5); }
-  .popup-menu .popup-inactive-menu-item {
-    color: #ADADAD; }
-    .popup-menu .popup-inactive-menu-item:insensitive {
-      color: rgba(173, 173, 173, 0.5); }
   .popup-menu.panel-menu {
     -boxpointer-gap: 4px;
     margin-bottom: 1.75em; }
+
+.popup-sub-menu {
+  background-color: #20242b;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 0px 0px 6px 6px; }
+  .popup-sub-menu .popup-menu-item {
+    border-radius: 0;
+    margin: 0; }
+    .popup-sub-menu .popup-menu-item:last-child {
+      border-radius: 0 0 6px 6px; }
+    .popup-sub-menu .popup-menu-item:active, .popup-sub-menu .popup-menu-item.selected, .popup-sub-menu .popup-menu-item:hover, .popup-sub-menu .popup-menu-item:focus {
+      background-color: #2b3039 !important;
+      color: #ADADAD; }
+
+.popup-menu-content {
+  padding: 6px;
+  background: #171a1f;
+  border-radius: 12px;
+  border: 1px solid #101316; }
+
+.popup-menu-item {
+  spacing: 6px;
+  border-radius: 6px; }
+  .popup-menu-item:ltr {
+    padding-left: 6px; }
+  .popup-menu-item:rtl {
+    padding-right: 6px; }
+  .popup-menu-item:active, .popup-menu-item.selected, .popup-menu-item:hover, .popup-menu-item:focus {
+    background-color: #242931 !important;
+    color: #ADADAD; }
+  .popup-menu-item:checked {
+    background-color: rgba(143, 183, 183, 0.3) !important;
+    color: #9bbfbf;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: none; }
+  .popup-menu-item:insensitive {
+    color: rgba(173, 173, 173, 0.5); }
+
+.popup-inactive-menu-item {
+  color: #ADADAD; }
+  .popup-inactive-menu-item:insensitive {
+    color: rgba(173, 173, 173, 0.5); }
+
+.popup-menu-arrow,
+.popup-menu-icon {
+  icon-size: 16px !important; }
 
 .popup-menu-ornament {
   text-align: right;
   width: 1.2em; }
 
-.popup-menu-boxpointer,
-.candidate-popup-boxpointer {
-  -arrow-border-radius: 8px;
-  -arrow-background-color: #15181c;
-  -arrow-border-width: 1px;
-  -arrow-border-color: #101316;
-  -arrow-base: 24px;
-  -arrow-rise: 11px;
-  -arrow-box-shadow: 0 1px 3px black; }
-
 .popup-separator-menu-item {
-  background: transparent; }
-  .popup-separator-menu-item-separator {
+  margin: 6px 0;
+  padding: 0 !important; }
+  .popup-separator-menu-item:ltr {
+    margin-right: 6px; }
+  .popup-separator-menu-item:rtl {
+    margin-left: 6px; }
+  .popup-separator-menu-item .popup-separator-menu-item-separator {
     height: 1px;
-    margin: 6px 64px;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom-width: 1px;
-    border-bottom-style: solid; }
+    background-color: #262b33; }
+  .popup-separator-menu-item .popup-menu-ornament {
+    width: 0 !important; }
+  .popup-sub-menu .popup-separator-menu-item {
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item:ltr {
+      margin-right: 2.5em; }
+    .popup-sub-menu .popup-separator-menu-item:rtl {
+      margin-left: 2.5em; }
+    .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+      background-color: #353c48; }
 
 .background-menu {
   -boxpointer-gap: 4px;
