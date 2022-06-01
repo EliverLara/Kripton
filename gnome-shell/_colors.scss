@@ -1,8 +1,8 @@
 $base_color:#131519;
 $bg_color:#171a1f; //252b2f
 $main_dark: darken($bg_color, 5%);
-$gray: lighten($bg_color, 7%);
-$fg_color: #ADADAD;
+$gray: lighten($bg_color, 12%);
+$fg_color: #a8a8a8;
 $dracula: $bg_color;
 $topbar_color:  lighten($fg_color, 20%);
 
@@ -17,7 +17,7 @@ $teal: #00A9A5;
 $g1: darken(#9bbfbf, 7%);
 $g2: darken(#9bbfbf, 7%);
 
-$selected_fg_color: #fefefe;
+$selected_fg_color: #000;
 $selected_bg_color: #9bbfbf;
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken($bg_color, 3%);
