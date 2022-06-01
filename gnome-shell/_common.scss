@@ -113,7 +113,7 @@ StScrollBar {
 
 .slider {
   height: 1em;
-  color: darken($selected_fg_color, 25%);
+  color: lighten($fg_color, 15%);
   border-color: black;
   -slider-height: 0.1em;
   -slider-background-color: $gray; //background of the trough
@@ -844,7 +844,7 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $topbar_color;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+    text-shadow: none;
     transition-duration: 100ms;
 
     .app-menu-icon {
@@ -857,7 +857,7 @@ StScrollBar {
     .system-status-icon,
     .app-menu-icon > StIcon,
     .popup-menu-arrow {
-      icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+      icon-shadow:none;
     }
 
     &:hover {
@@ -877,7 +877,7 @@ StScrollBar {
       // a box-shadow
       
       color: $selected_fg_color;
-      text-shadow: 0px 0px 2px rgba(92, 92, 92, 0.9);
+      text-shadow: none;
       box-shadow: inset 0 0 0 100px $selected_bg_color;
 
       &.clock-display {
@@ -935,30 +935,17 @@ StScrollBar {
     box-shadow: none;
     color: $fg_color;
   }
-
-    .calendar,
-    .datemenu-today-button,
-    .datemenu-displays-box {
-      margin: 0 1.5em;
-    }
-
-    .datemenu-calendar-column { spacing: 0.5em; }
-    .datemenu-displays-section { padding-bottom: 3em; }
-    .datemenu-displays-box { spacing: 1em; }
-
     .datemenu-calendar-column {
       border: 0 solid transparent;
       background: lighten($bg_color, 0.7%);
       border-radius: 7px;
       box-shadow: 0px 0px 1px 1px $borders_color inset;
+      padding: 0;
     }
 
     .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
     .events-section-title,
-    .message-list-section-title,
-    .events-button {
+    .message-list-section-title {
       border-radius: 4px;
       color: $fg_color;
       padding: .4em;
@@ -1038,7 +1025,7 @@ StScrollBar {
       width: 2.4em; height: 2.4em;
       padding: 0.1em;
       margin: 2px;
-      border-radius: 1.4em;
+      border-radius: 99px;
       color: $fg_color;
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
@@ -1066,23 +1053,23 @@ StScrollBar {
       }
       // Today
       .calendar-today {
-        font-weight: bold;
+        font-weight: bold !important;
         border: 1px solid $selected_bg_color;
         background-color: transparent;
-        color: $selected_fg_color;
+        color: lighten($fg_color, 20%) !important;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
-          color: $selected_fg_color;
+          color: $selected_fg_color !important;
         }
 
         &:active,&:selected {
           background-color: $selected_bg_color;
-          color: $selected_fg_color;
+          color: $selected_fg_color !important;
 
           &:hover,&:focus {
-            background-color:lighten($selected_bg_color, 3%);
-            color: $selected_fg_color;
+            background-color: lighten($selected_bg_color, 3%);
+            color: $selected_fg_color !important;
           }
         }
       }
@@ -1108,7 +1095,6 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 31.5em;
         border: none;
         .message-title{
           color: darken($fg_color,3%);
@@ -1604,7 +1590,7 @@ StScrollBar {
   }
 
   %icon_tile {
-    color: $selected_fg_color;
+    color: lighten($fg_color, 20%);
     padding: 6px;
     border: none;
     transition-duration: 100ms;
