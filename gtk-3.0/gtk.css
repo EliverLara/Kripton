@@ -5815,7 +5815,7 @@ radiobutton.color-button:active > radio {
     background-color: rgba(0, 0, 0, 0.17); }
   #tasklist-button:checked {
     color: white;
-    background-color: rgba(255, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -2px #9bbfbf; }
 
 .xfce4-panel.panel button.flat {
