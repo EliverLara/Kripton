@@ -520,7 +520,8 @@ StScrollBar {
 
 .popup-menu-item {
   spacing: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background-gradient-direction: none; }
   .popup-menu-item:ltr {
     padding-left: 6px; }
   .popup-menu-item:rtl {
@@ -895,7 +896,8 @@ StScrollBar {
   padding: 0.1em;
   margin: 2px;
   border-radius: 99px;
-  color: #a8a8a8; }
+  color: #a8a8a8;
+  background-gradient-direction: none; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: #2d333c;
     box-shadow: none; }
@@ -925,7 +927,8 @@ StScrollBar {
   font-weight: bold !important;
   border: 1px solid #9bbfbf;
   background-color: transparent;
-  color: #dbdbdb !important; }
+  color: #dbdbdb !important;
+  background-gradient-direction: none; }
   .calendar-today:hover, .calendar-today:focus {
     background-color: #a4c5c5;
     color: #000 !important; }
