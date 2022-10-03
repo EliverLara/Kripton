@@ -153,6 +153,7 @@ StScrollBar {
   -slider-active-border-color: #C3E88D;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
+  -slider-handle-border-color: transparent;
   -barlevel-height: 0.1em;
   -barlevel-background-color: #313742;
   -barlevel-border-color: black;
@@ -1396,6 +1397,8 @@ StScrollBar {
 .app-folder-dialog {
   background-color: #101316;
   border: none; }
+  .app-folder-dialog .folder-name-label {
+    color: #a8a8a8; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
