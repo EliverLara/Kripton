@@ -122,6 +122,7 @@ StScrollBar {
   -slider-active-border-color: $lime; //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
+  -slider-handle-border-color: transparent;
 
   -barlevel-height: 0.1em;
   -barlevel-background-color: $gray;
@@ -1608,6 +1609,8 @@ StScrollBar {
 .app-folder-dialog { //style like the dash
   background-color:  $_dash_bg;
   border: none;
+
+  & .folder-name-label { color: $fg_color; }
   .edit-folder-button {
     @extend %button;
 
