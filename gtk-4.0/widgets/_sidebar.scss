@@ -1,10 +1,10 @@
 /***********
  * Sidebar *
  ***********/
-.sidebar {
+.sidebar, .nautilus-window .navigation-sidebar {
   border-style: none;
   border-width: 0;
-  background-color: mix($bg_color, $base_color, 50%);
+  background-color: $base_color;
 
   .frame{
     border: none;
@@ -32,7 +32,8 @@
   }
 
   list { background-color: $base_color; }
-  row{
+  row {
+    padding: 2px 12px;
     &:selected{
       &:backdrop{
         color: $backdrop_selected_bg_color;
@@ -45,9 +46,9 @@
         background-color: transparentize($selected_bg_color, 0.8);
       }
       background: $base_color;
-      color: $selected_bg_color;
-      label{
+      &, label{
         color: $selected_bg_color;
+        font-weight: bold;
       }
     }
   }
