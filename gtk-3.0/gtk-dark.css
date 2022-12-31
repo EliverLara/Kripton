@@ -6183,10 +6183,6 @@ ConversationListView {
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(0.72); }
 
-scrolledwindow.sidebar treeview.view {
-  background: #131519;
-  padding: 1.5px; }
-
 /* path-bar of thunar */
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button,
 .thunar toolbar .path-bar-button {
@@ -6211,11 +6207,14 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   box-shadow: none; }
 
 /* thunar sidepane */
-window.thunar paned > scrolledwindow treeview.view:hover {
-  background: #1a1c22; }
-window.thunar paned > scrolledwindow treeview.view:selected {
-  color: #9bbfbf;
-  border-radius: 0;
-  box-shadow: none; }
+.thunar scrolledwindow.sidebar treeview.view {
+  background: #131519;
+  padding: 1.5px; }
+  .thunar scrolledwindow.sidebar treeview.view:hover {
+    background: #1e2127; }
+  .thunar scrolledwindow.sidebar treeview.view:selected {
+    color: #9bbfbf;
+    border-radius: 0;
+    box-shadow: none; }
 
 /*# sourceMappingURL=gtk-dark.css.map */
