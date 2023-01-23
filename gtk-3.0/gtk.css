@@ -4837,7 +4837,7 @@ button.raven-trigger {
 
 .budgie-panel {
   color: #a5a5a5;
-  background-color: rgba(23, 26, 31, 0.7);
+  background-color: #171a1f;
   background-image: none;
   box-shadow: none;
   border: none;
@@ -4846,7 +4846,7 @@ button.raven-trigger {
     color: #cd3520; }
   .budgie-panel:backdrop {
     color: #a5a5a5;
-    background-color: rgba(23, 26, 31, 0.7); }
+    background-color: #171a1f; }
   .budgie-panel button {
     border-top-width: 0;
     border-bottom-width: 0;
@@ -4859,7 +4859,7 @@ button.raven-trigger {
     color: #a5a5a5;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: rgba(23, 26, 31, 0.25); }
+    background-color: rgba(23, 26, 31, 0.55); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {
@@ -5279,7 +5279,7 @@ calendar.raven-calendar {
 
 .budgie-session-dialog, .budgie-polkit-dialog, .budgie-run-dialog {
   color: #a8a8a8;
-  background-color: rgba(23, 26, 31, 0.7); }
+  background-color: #171a1f; }
   .budgie-session-dialog label:backdrop, .budgie-polkit-dialog label:backdrop, .budgie-run-dialog label:backdrop {
     color: rgba(168, 168, 168, 0.8); }
   .budgie-session-dialog .dialog-title, .budgie-polkit-dialog .dialog-title, .budgie-run-dialog .dialog-title {
@@ -5353,7 +5353,7 @@ headerbar .budgie-run-dialog list row:selected .subtitle {
   margin: 4px;
   padding: 5px;
   border-radius: 0;
-  background-color: rgba(23, 26, 31, 0.7); }
+  background-color: #171a1f; }
   .budgie-menubar menu menuitem:hover {
     background-color: #9bbfbf;
     color: #000; }
@@ -5377,7 +5377,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border-style: none none solid; }
 
 .workspace-switcher .workspace-layout {
-  border: 0 solid rgba(23, 26, 31, 0.7); }
+  border: 0 solid #171a1f; }
   .top .workspace-switcher .workspace-layout:dir(ltr), .bottom .workspace-switcher .workspace-layout:dir(ltr) {
     border-left-width: 1px; }
   .top .workspace-switcher .workspace-layout:dir(rtl), .bottom .workspace-switcher .workspace-layout:dir(rtl) {
@@ -5385,7 +5385,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .left .workspace-switcher .workspace-layout, .right .workspace-switcher .workspace-layout {
     border-top-width: 1px; }
 .workspace-switcher .workspace-item, .workspace-switcher .workspace-add-button {
-  border: 0 solid rgba(0, 0, 0, 0.7); }
+  border: 0 solid black; }
   .top .workspace-switcher .workspace-item:dir(ltr), .bottom .workspace-switcher .workspace-item:dir(ltr),
   .top .workspace-switcher .workspace-add-button:dir(ltr), .bottom .workspace-switcher .workspace-add-button:dir(ltr) {
     border-right-width: 1px; }
@@ -5395,7 +5395,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .left .workspace-switcher .workspace-item, .right .workspace-switcher .workspace-item, .left .workspace-switcher .workspace-add-button, .right .workspace-switcher .workspace-add-button {
     border-bottom-width: 1px; }
 .workspace-switcher .workspace-item.current-workspace {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: black; }
 .workspace-switcher .workspace-add-button {
   border: none;
   background: transparent; }
@@ -5634,7 +5634,7 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   .panel.translucent {
     background-color: rgba(0, 0, 0, 0.5); }
   .panel.color-light.translucent {
-    background-color: rgba(23, 26, 31, 0.7); }
+    background-color: #171a1f; }
 
 menubar.panel,
 .panel menubar {
@@ -5812,7 +5812,7 @@ radiobutton.color-button:active > radio {
   background-size: calc(100% + 2px); }
 
 .xfce4-panel.panel {
-  background-color: rgba(23, 26, 31, 0.7);
+  background-color: #171a1f;
   color: #a8a8a8;
   text-shadow: none;
   -gtk-icon-shadow: none; }
@@ -5821,7 +5821,7 @@ radiobutton.color-button:active > radio {
   color: rgba(165, 165, 165, 0.8);
   border-radius: 0;
   border: none;
-  background-color: rgba(23, 26, 31, 0); }
+  background-color: #171a1f; }
   #tasklist-button:hover {
     color: #bfbfbf;
     background-color: rgba(0, 0, 0, 0.17); }
@@ -5834,15 +5834,15 @@ radiobutton.color-button:active > radio {
   color: #a5a5a5;
   border-radius: 0;
   border: none;
-  background-color: rgba(23, 26, 31, 0);
+  background-color: #171a1f;
   font-weight: normal; }
   .xfce4-panel.panel button.flat:hover {
     border: none;
-    background-color: rgba(45, 51, 60, 0.7); }
+    background-color: #2d333c; }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
     color: #a5a5a5;
     border-bottom: 2px solid #9bbfbf;
-    background-color: rgba(19, 21, 25, 0.7); }
+    background-color: #131519; }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
@@ -6033,10 +6033,10 @@ ConversationListView {
  * LightDm *
  ***********/
 #panel_window {
-  background-color: rgba(23, 26, 31, 0.7);
+  background-color: #171a1f;
   color: #a5a5a5;
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(8, 9, 11, 0.7); }
+  box-shadow: inset 0 -1px #08090b; }
   #panel_window .menubar,
   #panel_window .menubar > .menuitem
   menubar,
