@@ -2094,6 +2094,13 @@ StScrollBar {
 .quick-settings-system-item .icon-button {
   border-radius: 50px; }
 
+.quick-slider .icon-button:hover {
+  background-color: #22262d;
+  color: white;
+  border: 1px solid #101316;
+  text-shadow: 0 1px black;
+  icon-shadow: 0 1px black; }
+
 .openweather-current-summarybox,
 .openweather-forecast-icon,
 .openweather-current-databox-captions,
