@@ -289,21 +289,31 @@ notebook {
   }
 }
 
-
-tabbox {
-  background-color: darken($bg_color, 4%);
-  padding: 0px;
-  > tabboxchild {
-    margin: 0 -3px;
-    border-radius: 0;
+tabbar {
+  &:backdrop .box {
+    > scrolledwindow,
+    > .start-action,
+    > .end-action {
+      filter: opacity(1);
+    }
   }
-  > tab,
-  > tabboxchild > tab {
-    border-radius: 0;
-    &:checked, &:selected { 
-      background-color: $base_color;
-      box-shadow: 1px 0 0 $selected_bg_color inset;
-      color: $selected_bg_color;
+  tabbox {
+    background-color: darken($bg_color, 4%);
+    color: $fg_color;
+    padding: 0px;
+
+    > tabboxchild {
+      margin: 0 -3px;
+      border-radius: 0;
+    }
+    > tab,
+    > tabboxchild > tab {
+      border-radius: 0;
+      &:checked, &:selected { 
+        background-color: $base_color;
+        box-shadow: 1px 0 0 $selected_bg_color inset;
+        color: $selected_bg_color;
+      }
     }
   }
 }
