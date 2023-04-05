@@ -62,6 +62,7 @@ headerbar {
 
     &:hover,
     &:active,
+    &:active:hover,
     &:checked {
       // box-shadow: none;
       @include button(hover-header);
