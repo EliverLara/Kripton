@@ -105,6 +105,10 @@ headerbar {
 
       }
     }
+
+    &.titlebutton {
+      border: none;
+    }
   }
   .linked > button,
   .linked > button:hover,

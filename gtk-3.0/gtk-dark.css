@@ -348,6 +348,7 @@ button {
   outline-color: rgba(168, 168, 168, 0.3);
   background-color: #22262d;
   text-shadow: none;
+  border: 1px solid #131519;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   notebook > header > tabs > arrow,
   button.flat {
@@ -663,6 +664,7 @@ button.suggested-action {
   outline-color: rgba(0, 0, 0, 0.3);
   background-color: #8ec07c;
   text-shadow: none;
+  border: 1px solid #8ec07c;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   button.suggested-action.flat {
     border-color: transparent;
@@ -787,6 +789,7 @@ button.destructive-action {
   outline-color: rgba(0, 0, 0, 0.3);
   background-color: #a12a19;
   text-shadow: none;
+  border: 1px solid #a12a19;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   button.destructive-action.flat {
     border-color: transparent;
@@ -958,6 +961,7 @@ toolbar button:hover {
   outline-color: rgba(168, 168, 168, 0.3);
   background-color: #08090b;
   text-shadow: none;
+  border: 1px solid #08090b;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 toolbar button:active {
   font-weight: normal;
@@ -965,6 +969,7 @@ toolbar button:active {
   outline-color: rgba(168, 168, 168, 0.3);
   background-color: black;
   text-shadow: none;
+  border: 1px solid black;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 
 .inline-toolbar toolbutton > button {
@@ -1066,7 +1071,7 @@ popover.background radiobutton,
   modelbutton.flat:hover, popover.background checkbutton:hover,
   popover.background radiobutton:hover,
   .menuitem.button.flat:hover {
-    background-color: #22262d; }
+    background-color: #2d323c; }
   modelbutton.flat check:last-child, popover.background checkbutton check:last-child,
   popover.background radiobutton check:last-child,
   modelbutton.flat radio:last-child,
@@ -1600,6 +1605,7 @@ colorswatch#add-color-button {
     outline-color: rgba(168, 168, 168, 0.3);
     background-color: #22262d;
     text-shadow: none;
+    border: 1px solid #131519;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
     colorswatch#add-color-button overlay:hover {
       color: #a8a8a8;
@@ -2427,6 +2433,9 @@ GraniteWidgetsWelcome {
       background-color: #a12a19;
       text-shadow: none;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+    .titlebar:not(headerbar) button.titlebutton,
+    headerbar button.titlebutton {
+      border: none; }
   .titlebar:not(headerbar) .linked > button:active:backdrop,
   .titlebar:not(headerbar) .linked > button:checked:backdrop,
   headerbar .linked > button:active:backdrop,
@@ -2456,6 +2465,7 @@ GraniteWidgetsWelcome {
       outline-color: rgba(0, 0, 0, 0.3);
       background-color: #9bbfbf;
       text-shadow: none;
+      border: 1px solid #9bbfbf;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
       .selection-mode.titlebar:not(headerbar) button.flat,
       headerbar.selection-mode button.flat {
@@ -2563,6 +2573,7 @@ GraniteWidgetsWelcome {
         outline-color: rgba(255, 255, 255, 0.3);
         background-color: #cd3520;
         text-shadow: none;
+        border: 1px solid #cd3520;
         box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
         .selection-mode.titlebar:not(headerbar) button.suggested-action:hover,
         headerbar.selection-mode button.suggested-action:hover {
@@ -6043,6 +6054,7 @@ ConversationListView {
   outline-color: rgba(168, 168, 168, 0.3);
   background-color: #22262d;
   text-shadow: none;
+  border: 1px solid #131519;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   #content_frame button:hover {
     color: #a8a8a8;
