@@ -2243,12 +2243,14 @@ $slider_size: 16px;
   
   .quick-toggle {
     border-radius: 99px;
-    min-height: 40px;
+   // min-height: 40px;
   
-    &:checked { 
-      @include button(active, transparentize($selected_bg_color, 0.85));
-      color: $selected_bg_color;
+   &:checked { 
+     @include button(active, transparentize($selected_bg_color, 0.85));
+     color: $selected_bg_color;
     }
+
+    &, &:hover, &:checked { border: none; }
   
     & > StBoxLayout { spacing: $base_padding; }
   
@@ -2266,10 +2268,30 @@ $slider_size: 16px;
   .quick-menu-toggle {
     &:ltr > StBoxLayout { padding-right: 0; }
     &:rtl > StBoxLayout { padding-left: 0; }
+    background-color: transparent;
+
+    & .quick-toggle {
+      min-width: auto;
+      max-width: auto;
+  
+      &:ltr { border-radius: 99px 0 0 99px; }
+      &:rtl { border-radius: 0 99px 99px 0; }
+  
+      &:ltr:last-child { border-radius: 99px; }
+      &:rtl:last-child { border-radius: 99px; }
+    }
+  
   
     & .quick-toggle-arrow {
       background-color: transparentize($fg_color, 0.9);
       padding: $base_padding $base_padding*1.75;
+      border-width: 0;
+      &:checked { 
+        @include button(active, transparentize($selected_bg_color, 0.75));
+        color: $selected_bg_color;
+        border-width: 0;
+      }
+    
   
       &:ltr { border-radius: 0 99px 99px 0; }
       &:rtl { border-radius: 99px 0 0 99px; }
