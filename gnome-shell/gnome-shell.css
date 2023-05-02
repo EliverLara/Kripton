@@ -10,7 +10,7 @@ stage {
 /* Buttons */
 .button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button {
   color: #E0E0E0;
-  background-color: #1c1f25;
+  background-color: #252830;
   box-shadow: none;
   border: 1px solid #101316;
   text-shadow: 0 1px black;
@@ -19,7 +19,7 @@ stage {
   border-radius: 6px;
   padding: 4px 32px; }
   .button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
-    background-color: #252830;
+    background-color: #2d323c;
     color: white;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
@@ -39,7 +39,7 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover {
-    background-color: #22262d;
+    background-color: #2d323c;
     color: white;
     border: 1px solid #101316;
     text-shadow: 0 1px black;
@@ -67,21 +67,21 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
-    background-color: #252830;
+    background-color: #2d323c;
     color: white;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none !important;
     border: 1px solid #101316; }
     .modal-dialog-linked-button:focus:hover {
-      background-color: #252830;
+      background-color: #2d323c;
       color: white;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black;
       box-shadow: none !important;
       border: 1px solid #101316; }
   .modal-dialog-linked-button:hover {
-    background-color: #22262d;
+    background-color: #2d323c;
     color: white;
     border: 1px solid #101316;
     text-shadow: 0 1px black;
@@ -955,10 +955,12 @@ StScrollBar {
 /* Message list */
 .message-list {
   border: none; }
-  .message-list .message-title {
-    color: #d8d8d8; }
-  .message-list .message-content, .message-list .message-body {
-    color: #d6d6d6; }
+
+.message-title {
+  color: #d8d8d8; }
+
+.message-content, .message-body {
+  color: #d6d6d6; }
 
 .message-list-sections {
   spacing: 1em; }
@@ -1532,7 +1534,7 @@ StScrollBar {
   .notification-banner .notification-button {
     padding: 7px;
     color: #E0E0E0;
-    background-color: #1c1f25;
+    background-color: #252830;
     box-shadow: none;
     border: 1px solid #101316;
     text-shadow: 0 1px black;
@@ -1545,7 +1547,7 @@ StScrollBar {
     .notification-banner .notification-button:last-child {
       border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: #22262d;
+      background-color: #2d323c;
       color: white;
       border: 1px solid #101316;
       text-shadow: 0 1px black;
@@ -1659,7 +1661,7 @@ StScrollBar {
 
 .keyboard-key {
   color: #E0E0E0;
-  background-color: #1c1f25;
+  background-color: #252830;
   box-shadow: none;
   border: 1px solid #101316;
   text-shadow: 0 1px black;
@@ -1672,14 +1674,14 @@ StScrollBar {
   font-weight: bold;
   border-radius: 5px; }
   .keyboard-key:focus {
-    background-color: #252830;
+    background-color: #2d323c;
     color: white;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none !important;
     border: 1px solid #101316; }
   .keyboard-key:hover, .keyboard-key:checked {
-    background-color: #22262d;
+    background-color: #2d323c;
     color: white;
     border: 1px solid #101316;
     text-shadow: 0 1px black;
@@ -1764,14 +1766,14 @@ StScrollBar {
     padding: 3px 18px; }
     .login-dialog .modal-dialog-button:default {
       color: #E0E0E0;
-      background-color: #1c1f25;
+      background-color: #252830;
       box-shadow: none;
       border: 1px solid #101316;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black;
       border: 1px solid #101316; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
-        background-color: #22262d;
+        background-color: #2d323c;
         color: white;
         border: 1px solid #101316;
         text-shadow: 0 1px black;
@@ -2032,11 +2034,11 @@ StScrollBar {
   padding: 14px;
   border-radius: 12px; }
   .quick-settings .icon-button, .quick-settings .button {
+    color: #E0E0E0;
     padding: 10.5px; }
 
 .quick-toggle {
   border-radius: 99px;
-  min-height: 40px;
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
@@ -2046,6 +2048,8 @@ StScrollBar {
     text-shadow: none;
     icon-shadow: none;
     color: #9bbfbf; }
+  .quick-toggle, .quick-toggle:hover, .quick-toggle:checked {
+    border: none; }
   .quick-toggle > StBoxLayout {
     spacing: 6px; }
   .quick-toggle.button {
@@ -2063,9 +2067,30 @@ StScrollBar {
   padding-right: 0; }
 .quick-menu-toggle:rtl > StBoxLayout {
   padding-left: 0; }
+.quick-menu-toggle .quick-toggle {
+  min-width: auto;
+  max-width: auto; }
+  .quick-menu-toggle .quick-toggle:ltr {
+    border-radius: 99px 0 0 99px; }
+  .quick-menu-toggle .quick-toggle:rtl {
+    border-radius: 0 99px 99px 0; }
+  .quick-menu-toggle .quick-toggle:ltr:last-child {
+    border-radius: 99px; }
+  .quick-menu-toggle .quick-toggle:rtl:last-child {
+    border-radius: 99px; }
 .quick-menu-toggle .quick-toggle-arrow {
-  background-color: rgba(224, 224, 224, 0.1);
-  padding: 6px 10.5px; }
+  background-color: #1c1f25;
+  padding: 6px 10.5px;
+  border-width: 0;
+  color: #E0E0E0; }
+  .quick-menu-toggle .quick-toggle-arrow:checked {
+    color: #9bbfbf;
+    background-color: rgba(155, 191, 191, 0.35);
+    border: 1px solid #101316;
+    text-shadow: none;
+    icon-shadow: none;
+    color: #9bbfbf;
+    border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:ltr {
     border-radius: 0 99px 99px 0; }
   .quick-menu-toggle .quick-toggle-arrow:rtl {
@@ -2075,7 +2100,8 @@ StScrollBar {
   background-color: #131519;
   border-radius: 12px;
   padding: 12px;
-  margin: 12px 18px 0; }
+  margin: 12px 18px 0;
+  color: #E0E0E0; }
   .quick-toggle-menu .popup-menu-item > StIcon {
     -st-icon-style: symbolic; }
   .quick-toggle-menu .header {
@@ -2087,7 +2113,8 @@ StScrollBar {
       padding: 9px;
       background-color: #2d333c; }
       .quick-toggle-menu .header .icon.active {
-        background-color: #9bbfbf; }
+        background-color: #9bbfbf;
+        color: #000; }
 
 .quick-settings-system-item > StBoxLayout {
   spacing: 12px; }
@@ -2095,7 +2122,7 @@ StScrollBar {
   border-radius: 50px; }
 
 .quick-slider .icon-button:hover {
-  background-color: #22262d;
+  background-color: #2d323c;
   color: white;
   border: 1px solid #101316;
   text-shadow: 0 1px black;
