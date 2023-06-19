@@ -775,6 +775,10 @@ StScrollBar {
       color: #fafafa; }
       .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
         color: #fafafa; }
+  #panel:overview .panel-button {
+    color: white !important; }
+    #panel:overview .panel-button:active, #panel:overview .panel-button:overview, #panel:overview .panel-button:focus, #panel:overview .panel-button:checked {
+      color: #000 !important; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
