@@ -899,6 +899,11 @@ $slider_size: 16px;
     }
   }
 
+  &:overview .panel-button  {
+    color: $topbar_color !important;
+    &:active, &:overview, &:focus, &:checked { color:$selected_fg_color !important; }
+  }
+
   .panel-status-indicators-box,
   .panel-status-menu-box {
     spacing: 2px;
