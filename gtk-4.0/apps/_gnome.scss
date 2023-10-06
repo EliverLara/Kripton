@@ -165,6 +165,22 @@
       label { border-radius:0px 4px 4px 0px; }
     }
   }
+
+  // search entry
+  #NautilusQueryEditor { 
+
+    > menubutton > button {
+      min-width: 16px;
+      min-height: 16px;
+      margin: 0;
+      -gtk-icon-size: 12px;
+      padding: 0 4px;
+      &:hover, &:active, &:checked {
+        image { color: $selected_bg_color; }
+      }
+    }
+  
+  }
 }
 
 .nautilus-circular-button {
