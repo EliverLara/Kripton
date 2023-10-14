@@ -5613,7 +5613,20 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   border: none;
   color: #a8a8a8;
   background: none; }
-  .search-item:hover, .search-item:focus {
+  .search-item:hover, .search-item .panel {
+    background-color: transparent;
+    transition: all 100ms ease-in-out; }
+    .search-item:hover.maximized, .search-item .panel.maximized {
+      background-color: #000; }
+    .search-item:hover.translucent, .search-item .panel.translucent {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .search-item:hover.color-light.translucent, .search-item .panel.color-light.translucent {
+      background-color: #171a1f; }
+  .search-item menubar.panel,
+  .search-item .panel menubar {
+    box-shadow: none;
+    border: none; }
+  .search-item:focus {
     border-radius: 0;
     background-color: rgba(155, 191, 191, 0.3);
     color: #000; }
@@ -5635,21 +5648,6 @@ headerbar .nautilus-window .path-bar-box .subtitle {
 /*********
  * Panel *
  ********/
-.panel {
-  background-color: transparent;
-  transition: all 100ms ease-in-out; }
-  .panel.maximized {
-    background-color: #000; }
-  .panel.translucent {
-    background-color: rgba(0, 0, 0, 0.5); }
-  .panel.color-light.translucent {
-    background-color: #171a1f; }
-
-menubar.panel,
-.panel menubar {
-  box-shadow: none;
-  border: none; }
-
 .composited-indicator > revealer,
 .composited-indicator > revealer image,
 .composited-indicator > revealer label,
