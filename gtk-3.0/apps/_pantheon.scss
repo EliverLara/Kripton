@@ -89,7 +89,28 @@
     color: $fg_color;
     background: none;
 
-    &:hover,
+    &:hover,.panel {
+      background-color: transparent;
+      transition: all 100ms ease-in-out;
+    
+      &.maximized {
+        background-color: #000;
+      }
+    
+      &.translucent {
+        background-color:  transparentize(black, 0.5);;
+      }
+    
+      &.color-light.translucent {
+        background-color: transparentize($panel_bg_color, 0);
+      }
+    }
+    
+    menubar.panel,
+    .panel menubar {
+        box-shadow: none;
+        border: none;
+    }
     &:focus {
       border-radius: 0;
       background-color: transparentize($selected_bg_color, 0.7);
@@ -120,30 +141,7 @@
  * Panel *
  ********/
 
-.panel {
-  background-color: transparent;
-  transition: all 100ms ease-in-out;
-
-  &.maximized {
-    background-color: #000;
-  }
-
-  &.translucent {
-    background-color:  transparentize(black, 0.5);;
-  }
-
-  &.color-light.translucent {
-    background-color: transparentize($panel_bg_color, 0);
-  }
-}
-
-menubar.panel,
-.panel menubar {
-    box-shadow: none;
-    border: none;
-}
-
-.composited-indicator {
+ .composited-indicator {
 
   > revealer,
   > revealer image,
