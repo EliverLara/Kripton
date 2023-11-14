@@ -1077,11 +1077,11 @@ button.color {
   button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
     border-radius: 0; }
 
-notebook button, list button, .view button, iconview button, popover button {
+notebook button, list button, popover button {
   box-shadow: inset 0px 0px 0px 1px #08090b; }
-  notebook button:backdrop, list button:backdrop, .view button:backdrop, iconview button:backdrop, popover button:backdrop {
+  notebook button:backdrop, list button:backdrop, popover button:backdrop {
     box-shadow: inset 0px 0px 0px 1px #08090b; }
-notebook .linked > button, list .linked > button, .view .linked > button, iconview .linked > button, popover .linked > button {
+notebook .linked > button, list .linked > button, popover .linked > button {
   box-shadow: none; }
 
 /************
@@ -2668,6 +2668,13 @@ window.csd > .titlebar:not(headerbar) {
   background: #171a1f; }
 .titlebar button:active {
   color: #9bbfbf; }
+
+.sidebar-pane .top-bar, .sidebar-pane .top-bar headerbar, .content-pane .top-bar, .content-pane .top-bar headerbar {
+  background-color: #171a1f; }
+
+.nautilus-window .sidebar-pane .top-bar headerbar {
+  padding-top: 3px;
+  padding-bottom: 3px; }
 
 /**************
  * GtkInfoBar *
@@ -5643,10 +5650,7 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
       color: rgba(155, 191, 191, 0.6); }
 .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
-  background: transparent;
-  height: 20px;
-  margin-top: 7px;
-  margin-bottom: 7px; }
+  background: transparent; }
   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,
   .nautilus-window .path-buttons-box headerbar .subtitle,
   headerbar .nautilus-window .path-buttons-box .subtitle, .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar .subtitle,
