@@ -340,3 +340,18 @@ window {
     color: $selected_bg_color;
   }
 }
+
+ // Gnome 
+ 
+.sidebar-pane, .content-pane {
+  .top-bar {
+    &, headerbar {
+      background-color: $headerbar_color;
+    }
+  }
+}
+
+.nautilus-window .sidebar-pane .top-bar headerbar {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
