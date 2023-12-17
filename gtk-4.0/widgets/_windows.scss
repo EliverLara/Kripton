@@ -88,16 +88,11 @@ windowcontrols button {
       background-color: transparent;
       box-shadow: none;
     }
-    &:checked,
-    &:hover,
-    &:backdrop:hover {
-      @include button(hover-header);
-    }
   }
   
   &.close:hover, &.close:active { color: $red; }
 
-  &.maximize:hover, &.maximize:active { color: $lime; }
+  &.maximize:hover, &.maximize:active { color: $cyan; }
 
   &.minimize:hover, &.minimize:active { color: $yellow; }
 }

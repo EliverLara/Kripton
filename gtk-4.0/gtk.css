@@ -4676,14 +4676,10 @@ windowcontrols button.close, windowcontrols button.maximize, windowcontrols butt
   windowcontrols button.close, windowcontrols button.close:backdrop, windowcontrols button.close:backdrop:hover, windowcontrols button.maximize, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:backdrop:hover, windowcontrols button.minimize, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:backdrop:hover {
     background-color: transparent;
     box-shadow: none; }
-  windowcontrols button.close:checked, windowcontrols button.close:hover, windowcontrols button.close:backdrop:hover, windowcontrols button.maximize:checked, windowcontrols button.maximize:hover, windowcontrols button.maximize:backdrop:hover, windowcontrols button.minimize:checked, windowcontrols button.minimize:hover, windowcontrols button.minimize:backdrop:hover {
-    background-color: rgba(155, 191, 191, 0.3);
-    color: #9bbfbf;
-    text-shadow: none; }
 windowcontrols button.close:hover, windowcontrols button.close:active {
   color: #cd3520; }
 windowcontrols button.maximize:hover, windowcontrols button.maximize:active {
-  color: #989719; }
+  color: #8ec07c; }
 windowcontrols button.minimize:hover, windowcontrols button.minimize:active {
   color: #d79920; }
 
