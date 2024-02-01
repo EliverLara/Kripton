@@ -3064,7 +3064,7 @@ notebook > header {
         box-shadow: none; }
       notebook > header.top > tabs > tab:checked {
         background-color: #131519;
-        box-shadow: -1px 0 0 #08090b, 0px -1px 0 #08090b, 1px 0 0 #08090b; }
+        box-shadow: -1px 0 0 #9bbfbf, 0px -1px 0 #08090b, 1px 0 0 #08090b; }
         notebook > header.top > tabs > tab:checked:hover {
           background-color: #131519; }
   notebook > header.bottom {
