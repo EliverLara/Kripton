@@ -50,6 +50,10 @@ messagedialog { // Message Dialog styling
   }
 }
 
+.messagedialog .message-area {
+  padding: 26px;
+}
+
 filechooser {
   .dialog-action-box {
     border-top: 1px solid $borders_color;
