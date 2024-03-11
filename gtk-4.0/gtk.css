@@ -1645,6 +1645,9 @@ messagedialog.csd .dialog-action-area button {
   messagedialog.csd .dialog-action-area button:last-child {
     border-bottom-right-radius: 4px; }
 
+.messagedialog .message-area {
+  padding: 26px; }
+
 filechooser .dialog-action-box {
   border-top: 1px solid #08090b; }
   filechooser .dialog-action-box:backdrop {
