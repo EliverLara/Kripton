@@ -3054,7 +3054,8 @@ menuitem radio {
   border-radius: 5px; }
 .scale-popup button:hover {
   background-color: rgba(224, 224, 224, 0.1);
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: #E0E0E0; }
 
 /************
 * Assistant *

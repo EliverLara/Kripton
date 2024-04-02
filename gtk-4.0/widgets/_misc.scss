@@ -25,6 +25,7 @@
       @extend %undecorated_button;
       background-color: transparentize($fg_color,0.9);
       border-radius: 5px;
+      color: $fg_color;
     }
 
     &:backdrop { &:hover, &:disabled, & { @extend %undecorated_button; }}
