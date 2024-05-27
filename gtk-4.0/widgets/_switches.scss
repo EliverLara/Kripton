@@ -6,7 +6,8 @@
  $_switch_slider_bg_active:  $base_color;
 
  switch {
-  font-size: 0px;
+  font-size: 1px;
+  font-weight: bold;
   outline-offset: -4px;
   transition: all 200ms ease-in;
   border: 1px solid transparent;
