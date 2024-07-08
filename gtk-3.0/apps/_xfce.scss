@@ -58,3 +58,14 @@
 .-vala-panel-appmenu-private > menuitem:first-child > label {
     color: $panel_fg_color;
 }
+
+// Desktop icons
+
+XfdesktopIconView.view .label {
+  color: #fff;
+  background-color: transparent;
+
+  &:selected, &:active, &:checked {
+    background-color: transparentize($selected_bg_color, 0.7);
+  }
+}

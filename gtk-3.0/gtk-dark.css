@@ -5875,6 +5875,12 @@ radiobutton.color-button:active > radio {
 .-vala-panel-appmenu-private > menuitem:first-child > label {
   color: #a5a5a5; }
 
+XfdesktopIconView.view .label {
+  color: #fff;
+  background-color: transparent; }
+  XfdesktopIconView.view .label:selected, XfdesktopIconView.view .label:active, XfdesktopIconView.view .label:checked {
+    background-color: rgba(155, 191, 191, 0.3); }
+
 /********
 * Unity *
 *********/
