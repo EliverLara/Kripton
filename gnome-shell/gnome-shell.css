@@ -108,8 +108,7 @@ StEntry {
   StEntry:hover {
     box-shadow: inset 0px 0px 1px 1px #9bbfbf; }
   StEntry:focus {
-    box-shadow: inset 0px 0px 1px 1px #9bbfbf;
-    box-shadow: none !important; }
+    box-shadow: inset 0px 0px 1px 1px #9bbfbf !important; }
   StEntry:insensitive {
     color: #7c7d80;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }

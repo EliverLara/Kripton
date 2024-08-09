@@ -57,8 +57,7 @@
 
   }
   @if $t==focus { 
-    box-shadow: inset 0px 0px 1px 1px $selected_bg_color; 
-    box-shadow: none !important;
+    box-shadow: inset 0px 0px 1px 1px $selected_bg_color !important; 
   }
   @if $t==hover {  box-shadow: inset 0px 0px 1px 1px $selected_bg_color;  }
   @if $t==insensitive {
