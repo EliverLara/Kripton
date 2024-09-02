@@ -9,6 +9,7 @@ switch {
   font-size: 1px;
   min-width: 45px;
   min-height: 27px;
+  background-color: transparent;
   background-size: 45px 27px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -25,7 +26,6 @@ switch {
     box-shadow: none; 
   }
 
-  &:active,
   &:checked {
     background-image: -gtk-scaled(url("../assets/switch-on.svg"),url("../assets/switch-on@2.svg"));
     slider {
@@ -41,53 +41,5 @@ switch {
     background-position: left center;
     background-color: transparent;
     background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"),url("../assets/switch-slider-off@2.svg"));
-  }
-
-  &:checked slider { }
-
-    &:backdrop {
-    &:backdrop {
-      box-shadow:none;
-      background-color: transparentize($_switch_slider_bg_active, 0.1);
-      border:none;
-    }
-  }
-
-  &:active slider {
-  &:backdrop {
-      box-shadow:none;
-      background-color: transparentize($_switch_slider_bg_active, 0.1);
-      border:none;
-    }
-  }
-
-  &:active slider {
-  }
-
-  row:selected & {
-    @if $variant == 'light' {
-      box-shadow: none;
-      border-color: $selected_borders_color;
-
-      &:backdrop { border-color: $selected_borders_color; }
-
-      &.slider:dir(rtl) { border-left-color: $borders_color; }
-      &.slider:dir(ltr) { border-right-color: $borders_color; }
-
-      &.slider { &:checked, & { border-color: $selected_borders_color; } }
-    }
-  }
-
-  // Trough
-  trough {
-
-    &:active,
-    &:checked {
-      background-color: $selected_bg_color;
-
-      &:backdrop {
-        background-color: $backdrop_selected_bg_color;
-      }
-    }
   }
 }
