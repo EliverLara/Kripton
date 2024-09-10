@@ -4414,25 +4414,25 @@ switch {
   background-size: 45px 27px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off@2.svg")); }
+  background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off.svg")); }
   switch:disabled {
-    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"), url("../assets/switch-insensitive@2.svg")); }
+    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"), url("../assets/switch-insensitive.svg")); }
   switch, switch slider {
     outline-color: transparent;
     color: transparent;
     border: none;
     box-shadow: none; }
   switch:checked {
-    background-image: -gtk-scaled(url("../assets/switch-on.svg"), url("../assets/switch-on@2.svg")); }
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"), url("../assets/switch-on.svg")); }
     switch:checked slider {
-      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on@2.svg")); }
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on@2.png")); }
   switch slider {
     min-width: 1px;
     min-height: 1px;
     background-repeat: no-repeat;
     background-position: left center;
     background-color: transparent;
-    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off@2.svg")); }
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off@2.png")); }
 
 /************
  * Toolbars *
