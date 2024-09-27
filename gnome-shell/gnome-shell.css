@@ -30,9 +30,9 @@ stage {
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
-    color: #9bbfbf;
-    background-color: rgba(23, 26, 31, 0.95);
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+    color: #000;
+    background-color: #9bbfbf;
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
@@ -63,8 +63,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: #9bbfbf;
-    background-color: rgba(23, 26, 31, 0.95);
+    color: #000;
+    background-color: #9bbfbf;
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
@@ -1349,8 +1349,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: #9bbfbf;
-    background-color: rgba(23, 26, 31, 0.95);
+    color: #000;
+    background-color: #9bbfbf;
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
@@ -1732,8 +1732,8 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
-    color: #9bbfbf;
-    background-color: rgba(23, 26, 31, 0.95);
+    color: #000;
+    background-color: #9bbfbf;
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
@@ -1824,7 +1824,7 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
-        color: #9bbfbf;
+        color: #000;
         background-color: #9bbfbf;
         border: 1px solid #101316;
         text-shadow: none;
@@ -2087,13 +2087,13 @@ StScrollBar {
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
-    color: #9bbfbf;
+    color: #000;
     background-color: rgba(155, 191, 191, 0.15);
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
     .quick-toggle:checked:hover {
-      color: #9bbfbf;
+      color: #000;
       background-color: rgba(171, 201, 201, 0.25);
       border: 1px solid #101316;
       text-shadow: none;
@@ -2136,13 +2136,13 @@ StScrollBar {
   border-width: 0;
   color: #E0E0E0; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
-    color: #9bbfbf;
+    color: #000;
     background-color: rgba(155, 191, 191, 0.35);
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-      color: #9bbfbf;
+      color: #000;
       background-color: rgba(171, 201, 201, 0.45);
       border: 1px solid #101316;
       text-shadow: none;
