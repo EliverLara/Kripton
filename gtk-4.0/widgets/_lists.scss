@@ -45,7 +45,7 @@ row {
       &:backdrop { background-color: $backdrop_selected_bg_color; }
     }
   }
-
+  .view { background-color: transparent; }
   &:selected { @extend %selected_items; }
 }
 
