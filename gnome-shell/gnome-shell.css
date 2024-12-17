@@ -8,7 +8,7 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .notification-banner .notification-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #E0E0E0;
   background-color: #252830;
   box-shadow: none;
@@ -16,27 +16,27 @@ stage {
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black;
   border: 1px solid #101316; }
-  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
+  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .notification-banner .notification-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     background-color: #2d323c;
     color: white;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none !important;
     border: 1px solid #101316; }
-  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
+  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .notification-banner .notification-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #7c7d80;
     background-color: rgba(45, 47, 52, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .notification-banner .notification-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .notification-banner .notification-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
     color: #000;
     background-color: #9bbfbf;
     border: 1px solid #101316;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
+  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .notification-banner .notification-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     background-color: #2d323c;
     color: white;
     border: 1px solid #101316;
@@ -1564,9 +1564,8 @@ StScrollBar {
   border: 1px solid #101316;
   box-shadow: 0 1px 4px rgba(33, 33, 33, 0.452); }
   .notification-banner:hover, .notification-banner:focus {
-    background-color: #20242b;
-    border-radius: 12px;
-    box-shadow: none; }
+    background-color: #191c22;
+    border-radius: 12px; }
   .notification-banner * {
     color: #fefefe; }
   .notification-banner .notification-icon {
@@ -1582,27 +1581,16 @@ StScrollBar {
     spacing: 1px;
     border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 7px;
-    color: #E0E0E0;
-    background-color: #252830;
-    box-shadow: none;
-    border: 1px solid #101316;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-    border: 1px solid #101316;
-    border: none;
-    box-shadow: none; }
+    padding: 7px; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
       border-radius: 0 0 12px 0; }
-    .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: #2d323c;
-      color: white;
-      border: 1px solid #101316;
-      text-shadow: 0 1px black;
-      icon-shadow: 0 1px black;
+    .notification-banner .notification-button, .notification-banner .notification-button:hover, .notification-banner .notification-button:focus {
       border: none; }
+
+.notification-buttons-bin .notification-button {
+  border-radius: 10px !important; }
 
 .summary-source-counter {
   font-size: 10pt;
