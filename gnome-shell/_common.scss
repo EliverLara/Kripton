@@ -1794,9 +1794,8 @@ $slider_size: 16px;
     border: 1px solid $borders_color;
     box-shadow: 0 1px 4px rgba(33, 33, 33, 0.452);
     &:hover, &:focus { 
-      background-color: lighten($bg_color, 4%); 
+      background-color: lighten($bg_color, 1%); 
       border-radius: 12px;
-      box-shadow: none;
     }
     *{ color: #fefefe; }
 
@@ -1811,16 +1810,15 @@ $slider_size: 16px;
     }
     .notification-button {
       padding: 7px;
-      @include button(normal);
-      border: none;
-      box-shadow: none;
+      @extend %button;
       &:first-child { border-radius: 0 0 0 12px; }
       &:last-child { border-radius: 0 0 12px 0; }
-      &:hover, &focus { 
-        @include button(hover);
-        border: none;
-      }
+      &, &:hover, &:focus { border: none; }
     }
+  }
+
+  .notification-buttons-bin .notification-button {
+    border-radius: 10px !important;
   }
   .summary-source-counter {
     font-size: 10pt;
