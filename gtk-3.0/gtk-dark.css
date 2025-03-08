@@ -5858,6 +5858,34 @@ XfdesktopIconView.view .label {
   XfdesktopIconView.view .label:selected, XfdesktopIconView.view .label:active, XfdesktopIconView.view .label:checked {
     background-color: rgba(155, 191, 191, 0.3); }
 
+#XfceNotifyWindow {
+  background-color: #131519;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid #08090b;
+  color: #E0E0E0;
+  padding: 40px; }
+  #XfceNotifyWindow:hover, #XfceNotifyWindow:focus {
+    background-color: #171a1f; }
+  #XfceNotifyWindow label, #XfceNotifyWindow image {
+    color: #E0E0E0; }
+  #XfceNotifyWindow button {
+    font-weight: normal;
+    color: #E0E0E0;
+    outline-color: rgba(224, 224, 224, 0.3);
+    background-color: #22262d;
+    text-shadow: none;
+    border: 1px solid #131519;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+    #XfceNotifyWindow button:hover {
+      color: #E0E0E0;
+      outline-color: rgba(224, 224, 224, 0.3);
+      background-color: #9bbfbf;
+      text-shadow: none;
+      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+      #XfceNotifyWindow button:hover label {
+        color: #000; }
+
 /********
 * Unity *
 *********/
