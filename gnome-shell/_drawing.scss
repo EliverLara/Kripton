@@ -148,8 +148,8 @@
     background-color: lighten($base_color, 8%);
     box-shadow: none;
     border: 1px solid $borders_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    text-shadow: none;
+    icon-shadow: none;
     border: 1px solid $borders_color;
   }
   @if $t==focus {
@@ -161,8 +161,8 @@
 
     background-color: lighten($base_color, 12%);
     color: lighten($fg_color, 25%);;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    text-shadow: none;
+    icon-shadow: none;
     box-shadow: none !important;
     border: 1px solid $borders_color;
   }
@@ -177,8 +177,8 @@
     background-color: lighten($base_color, 12%);
     color: lighten($fg_color, 25%);;
     border: 1px solid $borders_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    text-shadow: none;
+    icon-shadow: none;
 
   }
   @else if $t==active {
