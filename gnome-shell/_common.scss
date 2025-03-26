@@ -2347,6 +2347,11 @@ $slider_size: 16px;
       &:ltr { border-radius: 0 99px 99px 0; }
       &:rtl { border-radius: 99px 0 0 99px; }
     }
+    
+    & .quick-toggle-menu-button {
+      background-color: lighten($base_color, 10%);
+      &:hover { background-color: lighten($base_color, 12%);}
+    }
 
     & .quick-toggle-separator { width: 0px; }
   }
