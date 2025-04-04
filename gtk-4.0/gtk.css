@@ -1643,31 +1643,20 @@ messagedialog, .messagedialog, .dialog {
   background-color: #131519;
   border-radius: 10px; }
   messagedialog .titlebar:not(headerbar), .messagedialog .titlebar:not(headerbar), .dialog .titlebar:not(headerbar) {
-    background-color: rgba(23, 26, 31, 0.95); }
+    background-color: #131519; }
   messagedialog .titlebar, .messagedialog .titlebar, .dialog .titlebar {
     min-height: 20px;
     background-image: none;
-    background-color: rgba(23, 26, 31, 0.95);
+    background-color: #131519;
     border-style: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; }
-  messagedialog.csd, .messagedialog.csd, .dialog.csd {
+  messagedialog.csd.background, .messagedialog.csd.background, .dialog.csd.background {
+    background-color: #131519;
+    color: #E0E0E0;
     border-radius: 10px; }
-    messagedialog.csd.background, .messagedialog.csd.background, .dialog.csd.background {
-      background-color: #131519;
-      color: #E0E0E0;
-      border-radius: 10px; }
-    messagedialog.csd .dialog-action-area button, messagedialog.csd .response-area button, .messagedialog.csd .dialog-action-area button, .messagedialog.csd .response-area button, .dialog.csd .dialog-action-area button, .dialog.csd .response-area button {
-      padding: 7px 11px;
-      border-radius: 0;
-      color: #E0E0E0;
-      box-shadow: none;
-      border: none; }
-      messagedialog.csd .dialog-action-area button:not(.destructive-action):hover, messagedialog.csd .response-area button:not(.destructive-action):hover, .messagedialog.csd .dialog-action-area button:not(.destructive-action):hover, .messagedialog.csd .response-area button:not(.destructive-action):hover, .dialog.csd .dialog-action-area button:not(.destructive-action):hover, .dialog.csd .response-area button:not(.destructive-action):hover {
-        background-color: #9bbfbf;
-        color: #000; }
 
-.messagedialog .message-area {
+.messagedialog .message-area, .messagedialog .response-area, .dialog .dialog-action-area {
   padding: 26px; }
 
 filechooser .dialog-action-box {

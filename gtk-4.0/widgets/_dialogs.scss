@@ -6,12 +6,12 @@
   background-color: $base_color;
   border-radius: 10px;
   .titlebar:not(headerbar) {
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: $headerbar_color;
   }
   .titlebar {
     min-height: 20px;
     background-image: none;
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: $headerbar_color;
     border-style: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -23,25 +23,10 @@
       color: $fg_color;
       border-radius: 10px;
     }
-
-    border-radius: 10px;
-
-    .dialog-action-area button, .response-area button {
-      padding: 7px 11px; // labels are not vertically centered on message dialog, this is a workaround
-      border-radius: 0;
-      color: $fg_color;
-      box-shadow: none;
-      border: none;
-
-      &:not(.destructive-action):hover {
-        background-color: $selected_bg_color;
-        color: $selected_fg_color;
-      }
-    }
   }
 }
 
-.messagedialog .message-area {
+.messagedialog .message-area, .messagedialog .response-area,  .dialog  .dialog-action-area {
   padding: 26px;
 }
 
