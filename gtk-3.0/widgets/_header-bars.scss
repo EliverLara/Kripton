@@ -124,6 +124,13 @@ headerbar {
       }
     }
   }
+
+  .linked:not(.vertical) > entry { 
+    + button {
+      border-radius: 0 4px 4px 0px;
+      box-shadow: none;
+    }
+  }
   // End reset style
 
   &.selection-mode {
