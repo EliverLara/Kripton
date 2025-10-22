@@ -1310,7 +1310,7 @@ StScrollBar {
     margin: auto;
     padding: 10px;
     transition-duration: 300;
-    background-color: $bg_color;
+    background-color: lighten($bg_color, 4%);
     border: 1px solid $borders_color;
   }
 
