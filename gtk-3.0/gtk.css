@@ -725,16 +725,17 @@ button.suggested-action {
     -gtk-icon-shadow: none;
     color: rgba(142, 192, 124, 0.8); }
   button.suggested-action:disabled {
-    color: white;
-    outline-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    outline-color: rgba(0, 0, 0, 0.3);
     background-color: #8ec07c;
     text-shadow: none;
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0.7; }
     button.suggested-action:disabled label {
       color: rgba(0, 0, 0, 0.7); }
     button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
       color: rgba(0, 0, 0, 0.7);
-      outline-color: rgba(255, 255, 255, 0.3);
+      outline-color: rgba(0, 0, 0, 0.3);
       background-color: #8ec07c;
       text-shadow: none;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
@@ -850,16 +851,17 @@ button.destructive-action {
     -gtk-icon-shadow: none;
     color: rgba(161, 42, 25, 0.8); }
   button.destructive-action:disabled {
-    color: white;
-    outline-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    outline-color: rgba(0, 0, 0, 0.3);
     background-color: #a12a19;
     text-shadow: none;
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0.7; }
     button.destructive-action:disabled label {
       color: rgba(0, 0, 0, 0.7); }
     button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
       color: rgba(0, 0, 0, 0.7);
-      outline-color: rgba(255, 255, 255, 0.3);
+      outline-color: rgba(0, 0, 0, 0.3);
       background-color: #a12a19;
       text-shadow: none;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
