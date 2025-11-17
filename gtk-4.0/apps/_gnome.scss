@@ -233,6 +233,10 @@ datechooser {
       font-weight: bold;
     }
   }
+  .weekday, .weeknum { color: $insensitive_fg_color;}
+  .weeknum { background-color: lighten($base_color, 4%);}
+  .current-week { background-color: transparentize($insensitive_fg_color, 0.9);}
+
 }
 
 agenda-view list.background {
@@ -242,3 +246,5 @@ agenda-view list.background {
     color: $headerbar_fg_color;
   }
 }
+
+popover datechooser { background-color: transparent; }
