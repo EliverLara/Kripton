@@ -325,6 +325,9 @@ window.assistant .sidebar label.highlight {
   background-color: #9bbfbf;
   color: #000; }
 
+window.aboutdialog image.large-icons {
+  -gtk-icon-size: 128px; }
+
 .app-notification,
 .app-notification.frame, .osd .scale-popup, .osd popover.background > arrow,
 .osd popover.background > contents, popover.background.touch-selection > arrow,
