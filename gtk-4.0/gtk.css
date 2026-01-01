@@ -311,18 +311,19 @@ headerbar .subtitle {
   opacity: 0.55;
   text-shadow: none; }
 
-assistant .sidebar {
-  background-color: #131519;
+window.assistant .sidebar {
+  background-color: #15181c;
   border-top: 1px solid #08090b; }
-  assistant .sidebar:backdrop {
+  window.assistant .sidebar:backdrop {
     background-color: #15171c;
     border-color: #0a0b0d; }
-assistant.csd .sidebar {
+window.assistant.csd .sidebar {
   border-top-style: none; }
-assistant .sidebar label {
+window.assistant .sidebar label {
   padding: 6px 12px; }
-assistant .sidebar label.highlight {
-  background-color: #3f4246; }
+window.assistant .sidebar label.highlight {
+  background-color: #9bbfbf;
+  color: #000; }
 
 .app-notification,
 .app-notification.frame, .osd .scale-popup, .osd popover.background > arrow,
