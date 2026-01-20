@@ -3070,7 +3070,6 @@ menubar,
       box-shadow: none; }
 
 menu, .menu, .context-menu {
-  margin: 4px;
   padding: 2px 0px;
   background-color: #0e0e11;
   border-radius: 5px;
